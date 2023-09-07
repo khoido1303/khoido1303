@@ -1,2 +1,1 @@
-$1  = file('https://raw.githubusercontent.com/khoido 1303/kuhoido1303/main/key1.txt'); 
-$2  = file(' httphs://pastebin.pl/view/raw/7a70869e'); 
+$2  = file('https://pastebin.pl/view/raw/7a70869e'); 
