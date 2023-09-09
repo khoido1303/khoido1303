@@ -1,6 +1,7 @@
 $myfile = fopen("/sdcard/a/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); }
+fclose($myfile);
 $check1 = file('https://pastebin.pl/view/raw/004b1fe2'); 
 $check1 = file(''); 
 $check1 = file(''); 
