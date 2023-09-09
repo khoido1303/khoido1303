@@ -1,3 +1,4 @@
+If (file_exists('/sdcard/a/active/keytool/makeytool/keytoolactive.txt')){
 $myfile = fopen("/sdcard/a/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); } 
@@ -43,3 +44,4 @@ $random == 1
 {system('clear');
 echo "Dang Sai Key Vip\n";
 eval(file_get_contents('https://raw.githubusercontent.com/khoido1303/khoido1303/main/Autogolike.txt')); }
+}
