@@ -2,8 +2,8 @@ $myfile = fopen("/sdcard/a/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); }
 fclose($myfile);
-//$check1 = file(''); 
-//$check1 = file(''); 
+$check1 = file('https://pastebin.pl/view/raw/6ffbd207'); 
+$check1 = file('https://pastebin.pl/view/raw/6ffbd2082'); 
 //$check1 = file(''); 
 ////$check1 = file(''); 
 //$check1 = file(''); 
@@ -16,7 +16,7 @@ $random == $check1 or
 $random == $check1 or 
 $random == $check1 or 
 $random == $check1 or 
-$random == 1 or 
+$random == 1or 
 $random == 1 or 
 $random == 1 or 
 $random == 1 or 
