@@ -3,12 +3,23 @@ while(!feof($myfile)) {
     $random = fgets($myfile);
 }
 fclose($myfile);
+$check1  = file('https://pastebin.pl/view/raw/004b1fe2');
+$check1  = file('');
+$check1  = file('');
+$check1  = file('');
+$check1  = file('');
 if (
 $random == 348456865109191 or
 $random == 595478388671479 or
-$random == 1 or
-$random == 1 or
-$random == 1 or
+$random == $check1 or
+$random == $check1 or
+$random == $check1 or
+$random == $check1 or
+$random == $check1 or
+$random == $check1 or
+$random == $check1 or
+$random == $check1 or
+$random == $check1 or
 $random == 1 or
 $random == 1 or
 $random == 1 or
