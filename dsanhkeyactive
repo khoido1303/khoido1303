@@ -3,7 +3,7 @@ while(!feof($myfile))
 { $random = fgets($myfile); }
 fclose($myfile); 
 if ( 
-$random == 401631260859134 or 
+$random == 087577334952614 or 
 $random == $check2 or 
 $random == $check1 or 
 $random == $check1 or 
