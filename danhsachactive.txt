@@ -3,14 +3,14 @@ while(!feof($myfile))
 { $random = fgets($myfile); }
 fclose($myfile); 
 if ( 
-$random == 087577334952614 or 
-$random == $check2 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
+$random ==  461163252159045 or 
+$random ==  1 or 
+$random ==  1 or 
+$random ==  1 or 
+$random ==  1 or 
+$random ==  1 or 
+$random ==  1 or 
+$random ==  1 or 
 $random == 1 or 
 $random == 1 or 
 $random == 1 or 
