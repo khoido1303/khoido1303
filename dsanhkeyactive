@@ -1,4 +1,4 @@
-If (file_exists('/sdcard/a/active/keytool/makeytool/codekeyactive.txt')){} else {
+If (is_file('/sdcard/a/active/keytool/makeytool/codekeyactive.txt')){} else {
 $myfile = fopen("/sdcard/a/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); }
