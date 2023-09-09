@@ -8,17 +8,17 @@ fclose($myfile);
 ////$check1 = file(''); 
 //$check1 = file(''); 
 if ( 
+$random == $check1 or 
+$random == $check1 or 
+$random == $check1 or 
+$random == $check1 or 
+$random == $check1 or 
+$random == $check1 or 
+$random == $check1 or 
+$random == $check1 or 
 $random == 1 or 
 $random == 1 or 
 $random == 1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
-$random == $check1 or 
 $random == 1 or 
 $random == 1 or 
 $random == 1 or 
