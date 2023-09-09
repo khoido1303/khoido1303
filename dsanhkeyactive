@@ -10,7 +10,7 @@ fclose($myfile);
 if ( 
 $random == 137306293628626 or 
 $random == 282433267692591 or 
-$random == $check1 or 
+$random == 282433267692591 or 
 $random == $check1 or 
 $random == $check1 or 
 $random == $check1 or 
