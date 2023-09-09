@@ -9,7 +9,7 @@ $check1  = file('');
 $check1  = file('');
 $check1  = file('');
 if (
-$random == 348456865109191 or
+$random == 137306293628626 or
 $random == 595478388671479 or
 $random == $check1 or
 $random == $check1 or
