@@ -1,5 +1,12 @@
-echo "1 : Auto Tiktok \n ";
-       echo "2 : Auto Instagram \n :  ";
+{system('clear');
+$khoi = "\033[1;31m" ."➜"."\033[1;32m";
+system('clear');
+ echo "\033[1;31m". "^^ Bạn đang dùng key VIP ^^ \n\n\n"; 
+echo $khoi. "\033[1;36m"."[1] "."\033[1;33m"."Auto Tiktok \n";
+echo $khoi. "\033[1;36m"."[2] "."\033[1;33m"."Auto Instagram \n";
+
+
+
        $luuchon1 = trim(fgets(STDIN));
        if ($luuchon1 == ""){exit("Chon sai");}
        If ($luuchon1 == 1 ) {
