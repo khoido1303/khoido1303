@@ -1,0 +1,14 @@
+echo "1 : Auto Tiktok \n ";
+       echo "2 : Auto Instagram \n :  ";
+       $luuchon1 = trim(fgets(STDIN));
+       if ($luuchon1 == ""){exit("Chon sai");}
+       If ($luuchon1 == 1 ) {
+      eval(file_get_contents('https://raw.githubusercontent.com/khoido1303/khoido1303/main/Autogolike.txt')); 
+    }  if ($luuchon1 == 2)
+      {eval(file_get_contents('https://raw.githubusercontent.com/khoido1303/khoido1303/main/iggl.txt')); 
+      }
+   $myfile = fopen("/sdcard/a/active/keytool/makeytool/keyfree.txt", "w");
+ echo "Key Save \n";;
+   $txt = $makey;
+  fwrite($myfile, $txt);
+  fclose($myfile);
