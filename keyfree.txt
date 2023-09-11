@@ -1,1 +1,15 @@
 $key = "freet7cn90";
+$key1 = "freet7cn90";
+$key2 = "freet7cn90";
+$key3 = "freet7cn90";
+$key4 = "freet7cn90";
+$key5 = "freet7cn90";
+$key6 = "freet7cn90";
+$key7 = "freet7cn90";
+$key8 = "freet7cn90";
+$key9 = "freet7cn90";
+$key10 = "freet7cn90";
+$key11 = "freet7cn90";
+$key12 = "freet7cn90";
+$key13 = "freet7cn90";
+$key14 = "freet7cn90";
