@@ -1,4 +1,5 @@
 $khoi = "\033[1;31m" ."➜"."\033[1;32m";
+KhoiAbc5b561c03
 echo $khoi. "\033[1;36m"."[1] "."\033[1;33m"."Auto Tiktok \n";
 echo $khoi. "\033[1;36m"."[2] "."\033[1;33m"."Auto Instagram \n";
 
