@@ -6,7 +6,7 @@ if (
 $random ==  153346970925115 or 
 $random ==  137508939963854 or 
 $random ==  282433267692591 or 
-$random ==  625460702701942 or 
+$random ==  1 or 
 $random ==  1 or 
 $random ==  1 or 
 $random ==  1 or 
