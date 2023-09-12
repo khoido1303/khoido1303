@@ -37,6 +37,6 @@ $random == 1 or
 $random == 1
 ) 
 {system('clear');
-echo "^^ Bạn đang dùng key VIP ^^ \n\n\n";
+echo "\033[1;31m"."^^ Bạn đang dùng key VIP ^^ \n";
 echo " Mã vô tool của bạn là : "."\033[0;35m"."$key18  \n";
 }
