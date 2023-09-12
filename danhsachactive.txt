@@ -37,5 +37,6 @@ $random == 1 or
 $random == 1
 ) 
 {system('clear');
-echo "^^ Bạn đang dùng key VIP ^^ \n\n\n"; break;
+echo "^^ Bạn đang dùng key VIP ^^ \n\n\n";
+echo " Mã vô tool của bạn là : $key18 ";
 }
