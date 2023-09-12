@@ -37,6 +37,5 @@ $random == 1 or
 $random == 1
 ) 
 {system('clear');
-echo "\033[1;31m". "^^ Bạn đang dùng key VIP ^^ \n\n\n"; 
-break;
-}
+echo "^^ Bạn đang dùng key VIP ^^ \n\n\n"; 
+break;}
