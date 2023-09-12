@@ -1,4 +1,4 @@
 $key = "long431305";
 $key1 = "freet7cn90";
 $key2 = "freet7cn90";
-$key3 = 1;
+$key3 = 0;
