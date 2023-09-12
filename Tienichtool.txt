@@ -10,8 +10,4 @@ echo $khoi. "\033[1;36m"."[2] "."\033[1;33m"."Auto Instagram \n";
     }  if ($luuchon1 == 2)
       {eval(file_get_contents('https://raw.githubusercontent.com/khoido1303/khoido1303/main/iggl.txt')); 
       }
-   $myfile = fopen("/sdcard/a/active/keytool/makeytool/keyfree.txt", "w");
- echo "Key Save \n";;
-   $txt = $makey;
-  fwrite($myfile, $txt);
-  fclose($myfile);
+   
