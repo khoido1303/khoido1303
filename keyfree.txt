@@ -1,2 +1,2 @@
 $key = "long431305";
-$keyb = uău7ydy;
+$keyb = 1;
