@@ -1,1 +1,1 @@
-break;
+echo "Key của bạn là : ". $key18;
