@@ -1,1 +1,1 @@
-echo "Key của bạn là : ". $key18;
+echo "Key của bạn là : ". $key18" \n" ;
