@@ -1,3 +1,4 @@
+$activeb=0;
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); }
@@ -38,5 +39,5 @@ $random == 1
 ) 
 {
 echo "\033[1;31m"."^^ Bạn đang dùng key VIP ^^ \n";
-sleep(1); break;
+$activeb=1;
 }
