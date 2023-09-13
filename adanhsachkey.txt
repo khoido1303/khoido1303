@@ -1,5 +1,5 @@
 $activeb=0;
-$myfile = fopen("/sdcard/Android/data/android/codekeyactive.txt", "r");
+$myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); }
 fclose($myfile); 
