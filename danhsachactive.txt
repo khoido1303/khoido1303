@@ -1,3 +1,4 @@
+exit("Bạn đang dùng phiên brn cũ");
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); }
