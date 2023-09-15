@@ -5,8 +5,8 @@ while(!feof($myfile))
 fclose($myfile); 
 if ( 
 $random ==  753659133644254 or 
+$random ==  935894845906643 or 
 $random ==  829614045357588 or 
-$random ==  282433267692591 or 
 $random ==  1 or 
 $random ==  1 or 
 $random ==  1 or 
