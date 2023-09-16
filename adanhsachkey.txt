@@ -38,7 +38,7 @@ $random == 1 or
 $random == 1
 ) 
 {
-$myfile =fopen("/sdcard/Android/datas/active/keytool/makeytool/activestatus.txt", "w");
+$myfile =fopen("activestatus.txt", "w");
     $txt = 1;
     fwrite($myfile, $txt);
     fclose($myfile);
