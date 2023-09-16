@@ -41,4 +41,5 @@ $random == 1
 
 echo "\033[1;31m"."^^ Bạn đang dùng key VIP ^^ \n";
 $activeb=1;
+sleep(1);
 }
