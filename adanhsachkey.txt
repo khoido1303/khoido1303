@@ -40,6 +40,10 @@ $random == 1
 {
 
 echo "\033[1;31m"."^^ Bạn đang dùng key VIP ^^ \n";
+$myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/activestatus.txt", "w");
+    $txt = 1;
+    fwrite($myfile, $txt);
+    fclose($myfile);
 $activeb=1;
 sleep(1);
 }
