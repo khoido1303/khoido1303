@@ -19,4 +19,5 @@ $random == 892117248269667 )
     fclose($myfile);
 $activeb = 1;
 $key_cu = $key18;
+echo $key18;
 }
