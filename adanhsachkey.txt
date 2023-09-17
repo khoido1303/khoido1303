@@ -1,4 +1,7 @@
-$activeb=0;
+$myfile =fopen("activestatus.txt", "w");
+    $txt = '1';
+    fwrite($myfile, $txt);
+    fclose($myfile);
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); }
