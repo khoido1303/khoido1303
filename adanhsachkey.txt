@@ -66,7 +66,7 @@ $myfile =fopen("activestatus.txt", "w");
     fclose($myfile);
 echo "\033[1;31m"."^^ Bạn đang dùng key VIP ^^ \n";
 $myfile =fopen("activestatus.txt", "w");
-    $txt = '1';
+    $txt = 1;
     fwrite($myfile, $txt);
     fclose($myfile);
 }
