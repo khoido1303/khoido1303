@@ -1,14 +1,16 @@
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r") or die("Unable to open file!");
-$random = fgets($myfile);
+while(!feof($myfile)) {
+    $random= fgets($myfile);
+}
 fclose($myfile);
 if ( 
-$random ==  753659133644254  or 
-$random ==  935894845906643 or 
-$random ==  829614045357588 or 
-$random ==  876042787492923 or 
-$random ==  731645944619911 or 
-$random ==  455576984433660 or 
-$random ==  377345085919835 or
+$random == 753659133644254  or 
+$random == 935894845906643 or 
+$random == 829614045357588 or 
+$random == 876042787492923 or 
+$random == 731645944619911 or 
+$random == 455576984433660 or 
+$random == 377345085919835 or
 $random == 880192926644718 or 
 $random == 892117248269667 or 
 ) 
