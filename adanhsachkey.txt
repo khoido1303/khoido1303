@@ -1,4 +1,6 @@
-$random = file_get_contents("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt");
+$fp = fopen('/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt', "r");//mở file ở chế độ đọc
+$random= fgets($fp);
+fclose($fp);
 if ( 
 $random == 753659133644254  or 
 $random == 935894845906643 or 
