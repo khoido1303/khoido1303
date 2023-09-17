@@ -16,4 +16,5 @@ $random == 892117248269667 )
     $txt = 1;
     fwrite($myfile, $txt);
     fclose($myfile);
+$activeb=1;
 }
