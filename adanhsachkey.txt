@@ -1,6 +1,6 @@
-$read = file('/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt');
-    foreach ($read as $line) {
-        $random = $line ;
+//$read = file('/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt');
+//    foreach ($read as $line) {
+  //      $random = $line ;
     }
 if ( 
 $random ==  753659133644254  or 
