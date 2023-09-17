@@ -1,7 +1,6 @@
-//$read = file('/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt');
-//    foreach ($read as $line) {
-  //      $random = $line ;
-  //  }
+$myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r") or die("Unable to open file!");
+$random = fgets($myfile);
+fclose($myfile);
 if ( 
 $random ==  753659133644254  or 
 $random ==  935894845906643 or 
