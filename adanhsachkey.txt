@@ -1,4 +1,4 @@
-    $read = file('/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt');
+$read = file('/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt');
     foreach ($read as $line) {
         $random = $line ;
     }
@@ -14,10 +14,6 @@ $random == 880192926644718 or
 $random == 892117248269667 or 
 ) 
 {
-$myfile =fopen("activestatus.txt", "w");
-    $txt = '1';
-    fwrite($myfile, $txt);
-    fclose($myfile);
 echo "\033[1;31m"."^^ Bạn đang dùng key VIP ^^ \n";
 $myfile =fopen("activestatus.txt", "w");
     $txt = 1;
