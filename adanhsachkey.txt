@@ -1,4 +1,3 @@
-    if (file_exists("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt")){
 $random = file_get_contents("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt");
 if ( 
 $random ==  753659133644254  or 
@@ -21,5 +20,4 @@ $myfile =fopen("activestatus.txt", "w");
     $txt = 1;
     fwrite($myfile, $txt);
     fclose($myfile);
-}
 }
