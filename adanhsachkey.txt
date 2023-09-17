@@ -18,5 +18,5 @@ $random == 892117248269667 )
     fwrite($myfile, $txt);
     fclose($myfile);
 $activeb = 1;
-$activeb = 1;
+$key_cu = $key18;
 }
