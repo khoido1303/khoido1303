@@ -34,7 +34,7 @@ $random ==  377345085919835
 or 
 $random ==  829614045357588
 or 
-$random == 880192926644718 or 
+$random == '880192926644718' or 
 $random == 1 or 
 $random == 1 or 
 $random == 1 or 
@@ -65,5 +65,8 @@ $myfile =fopen("activestatus.txt", "w");
     fwrite($myfile, $txt);
     fclose($myfile);
 echo "\033[1;31m"."^^ Bạn đang dùng key VIP ^^ \n";
-sleep(1);
+$myfile =fopen("activestatus.txt", "w");
+    $txt = '1';
+    fwrite($myfile, $txt);
+    fclose($myfile);
 }
