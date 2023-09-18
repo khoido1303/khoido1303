@@ -12,7 +12,7 @@ $random == 731645944619911 or
 $random == 455576984433660 or 
 $random == "377345085919835" or
 $random == 880192926644718 or 
-$random == 892117248269667 )
+$random == "H4MjGroASQDpgCV" )
 {$myfile =fopen("activestatus.txt", "w");
     $txt = '1';
     fwrite($myfile, $txt);
