@@ -1,4 +1,3 @@
-sleep(1);
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");
 while(!feof($myfile))
 { $random = fgets($myfile); }
@@ -12,7 +11,15 @@ $random == 731645944619911 or
 $random == 455576984433660 or 
 $random == "377345085919835" or
 $random == 880192926644718 or 
-$random == 419783870230287 )
+$random == 419783870230287 or
+$random == 017502783930888 or
+$random == 1 or
+$random == 1 or
+$random == 1 or
+$random == 1 or
+$random == 1 or
+$random == 1 or
+$random == 1 )
 {$myfile =fopen("activestatus.txt", "w");
     $txt = '1';
     fwrite($myfile, $txt);
