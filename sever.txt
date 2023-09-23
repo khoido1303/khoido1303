@@ -1,1 +1,1 @@
-1
+echo "chưa có bản thử nghiệm";
