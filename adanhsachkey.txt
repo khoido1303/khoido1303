@@ -4,8 +4,7 @@ $myfile =fopen("activestatus.txt", "w");
     fclose($myfile);
 echo $key18;
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");
-while(!feof($myfile))
-{ $random = fgets($myfile); }
+$random = fgets($myfile);
 fclose($myfile);
 if ( $random == 753659133644254 or 
 $random == 935894845906643 or 
