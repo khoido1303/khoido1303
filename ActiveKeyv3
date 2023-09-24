@@ -21,9 +21,4 @@ $random = fgets($myfile);
      $txt = '1'; 
      fwrite($myfile, $txt); 
      fclose($myfile); 
- echo $key18;
-echo "Có Tool Thử nghiệm bạn có muốn vô? (Entee để bỏ qua, Y để vô)";
-$thunghiem = trim(fgets(STDIN)); 
-if ($thunghiem == "y" or $thunghiem == "Y") {
-eval (file_get_contents('https://raw.githubusercontent.com/khoido1303/khoido1303/main/sever.txt'));}
  }
