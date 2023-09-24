@@ -267,7 +267,6 @@ if ($home["success"]== 200 ){
 
 $gop_data = [];
 system('clear');
-//$p = $banner ; cc ($p);
 echo $van." Account : ".$trang.$username." \n";
 echo $van." SỐ DƯ : ".$trang.$coin." \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
@@ -332,7 +331,7 @@ while(true){
 			
 		}
 	}
-}system ('clear');//cc ($banner);
+}system ('clear');
 	  echo $greenb."\n| STT |". $cam."Thời gian|".$yellow." Loại |". $trang. " Id Jobs |".$red. "Trạng thái |".$lightblueb." Tên tài khoản | \n";
 }
 
