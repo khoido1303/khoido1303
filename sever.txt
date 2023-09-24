@@ -1,14 +1,5 @@
 Echo "ĐaNg vô Tool, Tư, ghiệm";
-usleep(4000);
-echo "...";
-usleep(4000);
-echo ".......";
-usleep(4000);
-echo "......";usleep(4000);
-echo ".....";usleep(4000);
-echo "...";usleep(4000);
-echo "..";usleep(4000);
-echo ".";usleep(4000);
+sleep(3);
 echo $green."Đang vô tool vui lòng đợi ";
 //error_reporting(0);
 system('clear');
