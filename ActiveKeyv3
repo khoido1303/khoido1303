@@ -17,6 +17,7 @@ $random = fgets($myfile);
  $random == 549467067295040 or 
  $random == 835185368802269 or 
  $random == 499924055469736 or 
+ $random == 814716525640052 or 
  $random == 996457624543311 ) 
  {$myfile =fopen("activestatus.txt", "w"); 
      $txt = '1'; 
