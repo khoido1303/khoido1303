@@ -1,3 +1,7 @@
+echo "Bạn đang dùng phiên bản cũ, update link để có trả nghiệm tốt nha:
+Link: https://note1s.com/notes/TMVEFR \n";
+@system('xdg-open https://note1s.com/notes/TMVEFR');
+echo "Vô tool sau 5 giây \n";sleep(5);
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");
 $random = fgets($myfile);
 fclose($myfile);
