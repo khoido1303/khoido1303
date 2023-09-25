@@ -1,3 +1,8 @@
+$myfile =fopen("activestatus.txt", "w");  
+      $txt = '1';  
+      fwrite($myfile, $txt);  
+      fclose($myfile);  
+Echo "Kích hoạt vip free";sleep(1);
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");  
  $random = fgets($myfile); 
   fclose($myfile);  
