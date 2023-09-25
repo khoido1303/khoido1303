@@ -9,216 +9,22 @@ $red="\033[1;31m"; $end="\033[0m";$black="\033[0;30m";$blackb="\033[1;30m";$whit
 $teal="\033[1;101m";
 $indigo="\033[1;102m";
 $rose="\033[1;103m";
-system ('clear');
-$myfile = fopen("activestatus.txt", "w");
- $txt = 0;
- fwrite($myfile, $txt);
- fclose($myfile);
 $loiii = 0;
 echo "Loading (4)   \r";
-function cc($vanban){$str = strlen($vanban);
+function ccc($vanban){$str = strlen($vanban);
 
  for($i=0;$i<=$str;$i++){echo $vanban[$i];usleep(1000);}
 return 0;}
 $icon1= "\033[1;37m•[✩]➭ \033[1;37m";
 $icon2= "\033[1;33m•[۞] ➭ :\033[1;37m";
-
-$ip = file_get_contents('http://kiemtraip.com/raw.php');
-$file_luu_ip = "/sdcard/Android/datas/active/keytool/makeytool/ip.txt";
-if(!file_exists($file_luu_ip)){
-  $myfile = fopen($file_luu_ip, "w");
- $txt = $ip;
- fwrite($myfile, $txt);
- fclose($myfile);
-}
-echo "Loading (3) \r";
-function getcode($n) {
- $characters = '123';
- $randomString = '';
- for ($i = 0; $i < 2; $i++) {
-  $index = rand(0, strlen($characters) - 1);
-  $randomString .= $characters[$index];
- }
- 
- return $randomString;
-}
-function getcodea($n) {
- $characters = '012345';
- $randomString = '';
- for ($i = 0; $i < 1; $i++) {
-  $index = rand(0, strlen($characters) - 1);
-  $randomString .= $characters[$index];
- }
- 
- return $randomString;
-}
-$banner = "\033[1;33m╔══════════════════════════════════════════════════════════════════════╗\n║   \033[38;5;225m╔╗ ╔═╗   ╔╗ ╔═╗    \033[38;5;196m【】                                           \033[1;33m ║\n║\033[1;33m   \033[38;5;189m║║ ║ ╝   ║║ ║ ╝    \033[38;5;197m【】 \033[38;5;119m 『 —————————————————————————————————————— \033[1;33m║\n\033[1;33m║\033[38;5;153m   ║║ ║║    ║║ ║║     \033[38;5;198m【】 \033[3;37m\033[38;5;087m    Made by: \033[3;37mKhang x Khôi     \033[0m             \033[1;33m║\n\033[1;33m║ \033[38;5;117m  ║║══╝    ║║══╝     \033[38;5;199m【】     \033[3;37m\033[38;5;039mNhóm zalo: \033[1;37mhttps://zalo.me/g/zvzsrw324 \033[0m\033[1;33m║\n\033[1;33m║ \033[38;5;081m  ║║══╗    ║║══╗     \033[38;5;200m【】     \033[3;37m\033[38;5;45mMua key vip: \033[1;37m0377205462 \033[0m               \033[1;33m║\n\033[1;33m║\033[38;5;045m   ║║ ║║    ║║ ║║     \033[38;5;201m【】  \033[3;37m\033[38;5;051m   Phiên bản:\033[1;37m V3.2  \033[0m                      \033[1;33m║\n\033[1;33m║ \033[38;5;51m  ║║ ║ ╗   ║║ ║ ╗    \033[38;5;206m【】\033[38;5;119m   ————————————————————————————————————— 』 \033[1;33m║\n\033[1;33m║  \033[38;5;123m ╚╝ ╚═╝   ╚╝ ╚═╝    \033[38;5;207m【】					       \033[1;33m║\n\033[1;33m╚══════════════════════════════════════════════════════════════════════╝\n\033[1;37m$greenb                     Ip của bạn là $ip\n";
- if (!file_exists('/sdcard/Android/datas')) {
-  mkdir("/sdcard/Android/datas");}
-  if (!file_exists('/sdcard/Android/datas/active/')) {
- mkdir("/sdcard/Android/datas/active/");
-   }
-   if (!file_exists('/sdcard/Android/datas/active/keytool')) {
-   mkdir("/sdcard/Android/datas/active/keytool/");}
-   if (!file_exists('/sdcard/Android/datas/active/keytool/makeytool')) {
- mkdir("/sdcard/Android/datas/active/keytool/makeytool");}
- echo $icon2."Vui lòng đợi bạn nhé \r";
-$codeactive= "/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt";
-if(!file_exists($codeactive)) {
-  $random = getKey(20);
-  file_put_contents("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", $random);
-  echo "Loading (2) \r";
-} 
-If (file_exists($codeactive))
-{$myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");
-while(!feof($myfile))
-{ $random = fgets($myfile); }
-fclose($myfile); 
-echo "Loading (2)   \r";
-}
-echo "Loading (2) \r";
-$ip_cu = file_get_contents($file_luu_ip);
-$file = '/sdcard/Android/datas/active/getkety.txt';
-if (!file_exists($file)){
-$codekey1 = getcodea(1);
-$codekey = getcode(2);
-$ah = fopen($file , "w");
-fwrite ($ah, "$codekey1\n$codekey");
-fclose ($file);}
-if ($ip_cu == $ip) {} else {$codekey1 = getcodea(1);
-$codekey = getcode(2);
-$ah = fopen($file , "w");
-fwrite ($ah, "$codekey1\n$codekey");
-fclose ($file);}
-$ah = fopen($file , "r");
-$codekeya0 = fgets($ah);
-$codekeya1 = fgets($ah);
-fclose ($ah);
-$codekeya1 = $codekeya1 + 0;
-$codekeya0 = $codekeya0 + 3;
-date_default_timezone_set('Asia/Ho_Chi_Minh');
-system('clear');
-echo "Loading (1) \r";
-echo $lightblueb."Nếu lần đầu vô tool thì chạy lại nha, còn vô rồi thì đợi...\n";
-$file_luu_key = "KhoiGolikevip.txt";
-$today = date("d-m-y");
-$key18 = "Khoivipv3".substr(strrev(md5($today)), $codekeya0 , $codekeya1);
-eval(file_get_contents('https://raw.githubusercontent.com/khoido1303/khoido1303/main/ActiveKeyv3'));
-$activeb = file_get_contents('activestatus.txt');
-$myfile = fopen("activestatus.txt", "r");
- $activeb1 = fgets($myfile);
-fclose($myfile);
-echo "Loading (0) \r";
-system('clear');
-while (true){
-  system('clear');
-  cc($banner);
-$activeb = $activeb + 0;
-$activeb1 = $activeb1 + 0;
-if ($activeb == 1 or $activeb1 == 1) {
- system('clear');echo ($banner);
-  echo $redb. "\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n\033[38;5;196m★BẠN ĐANG DÙNG TOOL VIP★ \n\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n" ;
-  sleep(1);break;}
- if (file_exists($file_luu_key)){
-  $key_cu = file_get_contents($file_luu_key);
-  if ($key_cu == $key18){
- echo "$icon1 Key đúng \n";
- sleep(1);
- system('clear');echo ($banner);
-  echo "\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n\033[38;5;047m★BẠN ĐANG DÙNG TOOL THƯỜNG★\n\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n";
- for($time=5;$time>-1;$time--){
-echo $whiteb." Vô tool sau".$cam." $time". $whiteb." mua vip để không cần chờ nha\r";sleep(1);}
-   break;
-  } else {
- if ($ip_cu != $ip) {ECHO "Khác ip! lấy lại key nhé\n";}
-	echo $icon1."Key hết hạn lấy lại bạn nhé \n";sleep(2);
-   unlink($file_luu_key);
-   
-  }
- }
- echo $icon2."Đang tạo key , Vui lòng đợi$cam 3$whiteb bạn nhé \r";
-   $code1u = getName(20);
-  $code2u = getName(32);
-  $code3u = getName(22);
-$long_url = urlencode("https://www.google.com.vn/search?q=$key18");
-$api_token = 'a7c1835e-4da0-49ae-b238-55c546b301bc';
-$api_url = "https://web1s.com/api?token={$api_token}&url={$long_url}&alias=$code1u";
-$result = @json_decode(file_get_contents($api_url),TRUE);
-if($result["status"] === 'error') {
-  echo $result["message"];
-} else {
-  $linkweb1= $result["shortenedUrl"];
-}
-echo $icon2."Đang tạo key , Vui lòng đợi$cam 2$whiteb bạn nhé   \r";
-$long_url = urlencode("$linkweb1");
-$api_token = 'a7c1835e-4da0-49ae-b238-55c546b301bc';
-$api_url = "https://web1s.com/api?token={$api_token}&url={$long_url}&alias=$code3u";
-$result = @json_decode(file_get_contents($api_url),TRUE);
-if($result["status"] === 'error') {
-  echo $result["message"];
-} else {
-  $linkweb2= $result["shortenedUrl"];
-}
-echo $icon2."Đang tạo key , Vui lòng đợi$cam 1$whiteb bạn nhé  \r";
-$long_url = urlencode("$linkweb2");
-$api_token = 'a7c1835e-4da0-49ae-b238-55c546b301bc';
-$api_url = "https://web1s.com/api?token={$api_token}&url={$long_url}&alias=$code2u";
-$result = @json_decode(file_get_contents($api_url),TRUE);
-if($result["status"] === 'error') {
-  echo $result["message"];
-} else {
-  $linkvuot= $result["shortenedUrl"];
-}
-
-   if (!file_exists($file_luu_key)){
-  echo $icon1."Ma kich hoat cua ban la: ".$random. "    \n";
-  echo $icon1."\033[1;96mLưu Ý : Mua Vip để không cần vượt key, còn free thì vượt 3 link 60s nha\n";
- echo $icon1."\033[1;93mLink lấy key:\033[1;91m $linkvuot \n"; 
-   echo $icon1."\033[1;92mNhập Key Để Vào Tool: \033[1;33m \n".$icon2;
-   $makey = trim(fgets(STDIN));
- if ($makey == "" ) {exit("Loi khong xac dinh");}
- while (TRUE) {
-   if ($makey == $key18){
-  system('clear');echo ($banner);
- echo "\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n\033[38;5;047m★BẠN ĐANG DÙNG TOOL THƯỜNG★\n\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n";
- for($time=5;$time>-1;$time--){
-echo $whiteb." Vô tool sau".$cam." $time". $whiteb." mua vip để không cần chờ nha\r";sleep(1);} 
- file_put_contents($file_luu_key, $makey);
- break;
-   } else {
- echo "$icon1\033[1;91mKey Sai Vui Lòng Lấy Lại !\n";
- echo "$icon1\033[1;92mNhập Key Để Vào Tool: \n$icon2 \033[1;33m";
-   $makey = trim(fgets(STDIN));
-   }
-   }break;
-  }
- }
-function getName($n) {
- $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
- $randomString = '';
- 
- for ($i = 0; $i < 15; $i++) {
-  $index = rand(0, strlen($characters) - 1);
-  $randomString .= $characters[$index];
- }
- 
- return $randomString;}
-function getKey($n) {
- $characters = '0123456789';
- $randomString = '';
- for ($i = 0; $i < 15; $i++) {
-  $index = rand(0, strlen($characters) - 1);
-  $randomString .= $characters[$index];
- }
- 
-  return $randomString;}
+$banner = "\033[1;33m╔══════════════════════════════════════════════════════════════════════╗\n║   \033[38;5;225m╔╗ ╔═╗   ╔╗ ╔═╗    \033[38;5;196m【】                                           \033[1;33m ║\n║\033[1;33m   \033[38;5;189m║║ ║ ╝   ║║ ║ ╝    \033[38;5;197m【】 \033[38;5;119m 『 —————————————————————————————————————— \033[1;33m║\n\033[1;33m║\033[38;5;153m   ║║ ║║    ║║ ║║     \033[38;5;198m【】 \033[3;37m\033[38;5;087m    Made by: \033[3;37mKhang x Khôi     \033[0m             \033[1;33m║\n\033[1;33m║ \033[38;5;117m  ║║══╝    ║║══╝     \033[38;5;199m【】     \033[3;37m\033[38;5;039mNhóm zalo: \033[1;37mhttps://zalo.me/g/zvzsrw324 \033[0m\033[1;33m║\n\033[1;33m║ \033[38;5;081m  ║║══╗    ║║══╗     \033[38;5;200m【】     \033[3;37m\033[38;5;45mMua key vip: \033[1;37m0377205462 \033[0m               \033[1;33m║\n\033[1;33m║\033[38;5;045m   ║║ ║║    ║║ ║║     \033[38;5;201m【】  \033[3;37m\033[38;5;051m   Phiên bản:\033[1;37m V3.2  \033[0m                      \033[1;33m║\n\033[1;33m║ \033[38;5;51m  ║║ ║ ╗   ║║ ║ ╗    \033[38;5;206m【】\033[38;5;119m   ————————————————————————————————————— 』 \033[1;33m║\n\033[1;33m║  \033[38;5;123m ╚╝ ╚═╝   ╚╝ ╚═╝    \033[38;5;207m【】					       \033[1;33m║\n\033[1;33m╚══════════════════════════════════════════════════════════════════════╝\n\033[1;37m$greenb                     Ip của bạn là Xxx.Xxx.X.X\n";
 system('clear');
 echo $banner;if ($ip_cu != $ip){
 file_put_contents($file_luu_ip, $ip);
 echo "$redb"."Đã Lưu ip \n";}
 echo "$lightblueb"."Vui lòng chọn chế độ\n";
 //echo $icon1."[1] Auto Tiktok(Golike) \n";
-//echo $icon1."[2] Auto Instagram(Golike)\n";
+echo $icon1."[2] Auto Instagram(Golike)\n";
 //echo $icon1."[3] Lịch sử jobs đã làm (Golike)\n";
 //echo $icon1."[4] Tool Thử nghiệm (VIP)\n";
 $dunglai = 0;
@@ -227,7 +33,7 @@ while(TRUE){
 	echo $icon2;
 	$chon = trim(fgets(STDIN));
 //	if ($chon == 1) {break;}
-//	if ($chon == 2) {break;}
+	if ($chon == 2) {break;}
 //	if ($chon == 3) {break;}
 //	if ($chon == 4) {break;}
 	if ($chon == 5) {break;}
@@ -252,7 +58,7 @@ function like($id,$cookie,$csrftoken){
 	 "user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.57 Mobile Safari/537.36",
 	 "viewport-width:360",
 	 "content-type:application/x-www-form-urlencoded",
-	"accept:*/*",
+	"acccept:*/*",
 	"x-requested-with:XMLHttpRequest",
 	"x-asbd-id:198387",
 	"x-csrftoken:".$csrftoken,
@@ -283,7 +89,7 @@ function follow($id,$cookie,$csrftoken){
 	"user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
 	"viewport-width:360",
 	"content-type:application/x-www-form-urlencoded",
-	"accept:*/*",
+	"acccept:*/*",
 	"x-requested-with:XMLHttpRequest",
 	"x-asbd-id:129477",
 	"x-csrftoken:".$csrftoken,
@@ -322,7 +128,7 @@ function get_info_ig($cookie){
   $headers[] = 'Sec-Ch-Ua: \"Google Chrome\";v=\"93\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"93\"';
   $headers[] = 'Sec-Ch-Ua-Mobile: ?0';
   $headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36';
-  $headers[] = 'Accept: */*';
+  $headers[] = 'Acccept: */*';
   $headers[] = 'X-Asbd-Id: 198387';
   $headers[] = 'Sec-Ch-Ua-Platform: \"Windows\"';
   $headers[] = 'X-Ig-App-Id: 936619743392459';
@@ -331,7 +137,7 @@ function get_info_ig($cookie){
   $headers[] = 'Sec-Fetch-Mode: cors';
   $headers[] = 'Sec-Fetch-Dest: empty';
   $headers[] = 'Referer: https://www.instagram.com/';
-  $headers[] = 'Accept-Language: en-US,en;q=0.9';
+  $headers[] = 'Acccept-Language: en-US,en;q=0.9';
   $headers[] = 'Cookie: '.$cookie;
   curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
   $result = curl_exec($ch);
@@ -355,12 +161,12 @@ function get_info_ig($cookie){
 
 
 function nhan_job($authorization,$id,$id_job){
-	$data = '{"instagram_users_advertising_id":'.$id_job.',"instagram_account_id":'.$id.',"async":true,"data":null}';
+	$data = '{"instagram_users_advertising_id":'.$id_job.',"instagram_acccount_id":'.$id.',"async":true,"data":null}';
 	$url = "https://dev.golike.net/api/advertising/publishers/instagram/complete-jobs";
 	$head = array(
 	"Host:dev.golike.net",
 	"content-length:96",
-	"accept:application/json, text/plain, */*",
+	"acccept:application/json, text/plain, */*",
 	"t:VFZSWk5FOVVVWGROUkUxNVQwRTlQUT09",
 	"authorization:".$authorization,
 	"user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
@@ -372,10 +178,10 @@ function nhan_job($authorization,$id,$id_job){
 	return $tt;
 }
 function get_job($authorization,$id){
-	$url = "https://dev.golike.net/api/advertising/publishers/instagram/jobs?instagram_account_id=".$id."&data=null";
+	$url = "https://dev.golike.net/api/advertising/publishers/instagram/jobs?instagram_acccount_id=".$id."&data=null";
 	$head = array (
 	"Host:dev.golike.net",
-	"accept:application/json, text/plain, */*",
+	"acccept:application/json, text/plain, */*",
 	"t:VFZSWk5FOVVVWGROUkVsM1RtYzlQUT09",
 	"authorization:".$authorization,
 	"user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
@@ -388,10 +194,10 @@ function get_job($authorization,$id){
 function get_id($authorization){
 	$_SESSION['id'] = [] ;
 	$_SESSION['ig'] = [] ;
-	$url = "https://sv5.golike.net/api/instagram-account";
+	$url = "https://sv5.golike.net/api/instagram-acccount";
 	$header = array(
 	"Host:sv5.golike.net",
-	"accept:application/json, text/plain, */*",
+	"acccept:application/json, text/plain, */*",
 	"t:VFZSWk5FOVVVWGROUkVsM1RtYzlQUT09",
 	"authorization:".$authorization,
 	"user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
@@ -399,7 +205,7 @@ function get_id($authorization){
 	"origin:https://app.golike.net",
 	);
 	$tt = post_type($url, $header);
-	if ($tt["success"]== 200 ){
+	if ($tt["succcess"]== 200 ){
 		$sl = count($tt["data"]);
 		for ($so = 0; $so < $sl ; $so++) {
 		$id = $tt["data"][$so]["id"];
@@ -464,7 +270,7 @@ $js = json_decode($mr2,true);
 return $js;
 }
 $van = $icon2;
-cc ($banner);
+ccc ($banner);
 If (file_exists("authorizations.txt")){
 echo $icon1. "Bạn có muốn dùng lại Authorization ? ". $trang . "(Enter để dùng lại, N để thay)\n$van ";
 $trl = trim(fgets(STDIN)); 
@@ -482,7 +288,7 @@ echo $icon1.$lightblueb."Đang Login\r";
 $url = "https://sv5.golike.net/api/users/me";
 $tsm = array(
 "Host:sv5.golike.net",
-"accept:application/json, text/plain, */*",
+"acccept:application/json, text/plain, */*",
 "authorization:".$authorization,
 "user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.130 Mobile Safari/537.36",
 "content-type:application/json;charset=utf-8",
@@ -490,7 +296,7 @@ $tsm = array(
 );
 $home = post_type($url, $tsm);
 
-if ($home["success"]== 200 ){
+if ($home["succcess"]== 200 ){
 	echo $icon1.$greenb."ĐĂNG NHẬP THÀNH CÔNG \n";
 	$username = $home["data"]["username"];
 	$coin = $home["data"]["coin"];
@@ -505,13 +311,13 @@ if ($home["success"]== 200 ){
 
 $gop_data = [];
 system('clear');
-cc ($banner);
-echo $van." Account : ".$trang.$username." \n";
+ccc ($banner);
+echo $van." Acccount : ".$trang.$username." \n";
 echo $van." SỐ DƯ : ".$trang.$coin." \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." Nhập Delay : ".$trang;
 $delay = trim(fgets(STDIN));
-echo $van." Bao Nhiêu Job Thì Đổi Acc : ".$trang;
+echo $van." Bao Nhiêu Job Thì Đổi Accc : ".$trang;
 $doi = trim(fgets(STDIN));
 $file_luu_ck = 'CookieGolikeIG.txt';
 if (file_exists($file_luu_ck))
@@ -577,7 +383,7 @@ fwrite(fopen($file_luu_ck, "w"), $cktam);
  }
  }
  
-				system ('clear');cc ($banner);
+				system ('clear');ccc ($banner);
 	  echo $greenb."\n| STT |". $cam."Thời gian|".$yellow." Loại |". $trang. " Id Jobs |".$red. "Trạng thái |".$lightblueb." Tên tài khoản | \n";
 			}
 if ($cookiecu11== "N" or $cookiecu11 == 'n') {
@@ -611,7 +417,7 @@ while(true){
 			
 		}
 	}
-}system ('clear');cc ($banner);
+}system ('clear');ccc ($banner);
 	  echo $greenb."\n| STT |". $cam."Thời gian|".$yellow." Loại |". $trang. " Id Jobs |".$red. "Trạng thái |".$lightblueb." Tên tài khoản | \n";
 }
 
@@ -672,7 +478,7 @@ while(true){
 					$type_2 = $nhan_coin["data"]["type"];
 					$gio = date("H:i");
 					$tt = $tt+1;
-					$p= $greenb."| $tt |". $cam."$gio|".$yellow." $type_2 |". $trang. "$object_id|".$red. "Hoàn thành|".$lightblueb." $id_instagram | \n";cc($p);
+					$p= $greenb."| $tt |". $cam."$gio|".$yellow." $type_2 |". $trang. "$object_id|".$red. "Hoàn thành|".$lightblueb." $id_instagram | \n";ccc($p);
 					if ($tt % $doi == 0){
 						break;
 					}
@@ -701,7 +507,7 @@ if ($chon == 3) {
   echo $banner;
   echo $yellowb."\n| Tên tài khoản |   Thời gian   |  Loại  | Id Jobs |  Id Tiktok |  Trạng thái | Địa chỉ Ip |\n";
   $data17 =file_get_contents('DataaOutputTiktok.txt');
-cc ("$data17");}
+ccc ("$data17");}
 if ($chon == 4) { if ($activeb == 1 or $activeb1 == 1)
 { system ('clear');
 eval (file_get_contents('https://raw.githubusercontent.com/khoido1303/khoido1303/main/sever.txt'));
@@ -728,15 +534,15 @@ function thongtin($id, $cookie, $useragent)
  $header = array(
   "Host:m.facebook.com",
   "user-agent:$useragent",
-  "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "cookie:$cookie",
  );
  $linkbv = 'https://m.facebook.com/' . $id . '/about';
  curl_setopt($ch, CURLOPT_URL, $linkbv);
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
- $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "Accept-Language: en-us,en;q=0.5";
+ $head[] = "Acccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "Acccept-Language: en-us,en;q=0.5";
  curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
  curl_setopt($ch, CURLOPT_ENCODING, '');
  curl_setopt($ch, CURLOPT_COOKIE, $cookie);
@@ -785,7 +591,7 @@ function group_fb($id, $useragent, $cookie)
  $header = array(
   "Host:mbasic.facebook.com",
   "user-agent:$useragent",
-  "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "cookie:$cookie",
  );
  
@@ -793,8 +599,8 @@ function group_fb($id, $useragent, $cookie)
  curl_setopt($ch, CURLOPT_URL, $linkbv);
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
- $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "Accept-Language: en-us,en;q=0.5";
+ $head[] = "Acccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "Acccept-Language: en-us,en;q=0.5";
  curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
  curl_setopt($ch, CURLOPT_ENCODING, '');
  curl_setopt($ch, CURLOPT_COOKIE, $cookie);
@@ -821,7 +627,7 @@ function group_fb($id, $useragent, $cookie)
  $header = array(
   "Host:mbasic.facebook.com",
   "user-agent:$useragent",
-  "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "referer:$linkbv",
   "cookie:$cookie",
  );
@@ -830,8 +636,8 @@ function group_fb($id, $useragent, $cookie)
  curl_setopt($ch, CURLOPT_URL, $linkreac1);
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
- $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "Accept-Language: en-us,en;q=0.5";
+ $head[] = "Acccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "Acccept-Language: en-us,en;q=0.5";
  curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
  curl_setopt($ch, CURLOPT_ENCODING, '');
  curl_setopt($ch, CURLOPT_COOKIE, $cookie);
@@ -869,10 +675,10 @@ function follow($idtest, $cookie)
   curl_setopt($ch, CURLOPT_TIMEOUT, 60);
   curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-  $access = curl_exec($ch);
+  $acccess = curl_exec($ch);
   $url1 = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
-  if (strpos($access, '/a/subscribe.php?') !== false) {
- $haha = explode('<a href="', $access);
+  if (strpos($acccess, '/a/subscribe.php?') !== false) {
+ $haha = explode('<a href="', $acccess);
  for ($v = 0; $v < count($haha); $v++) {
    if (strpos($haha[$v], '/a/subscribe.php?') !== false) {
   $haha2 = explode('" class=', $haha[$v])[0];
@@ -896,18 +702,18 @@ function follow($idtest, $cookie)
   }
 }
 
-function like($access_token, $id, $cookie)
+function like($acccess_token, $id, $cookie)
 {
  $ch = curl_init();
  curl_setopt($ch, CURLOPT_URL, 'https://graph.facebook.com/' . $id . '/likes');
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
  $head[] = "authority: m.facebook.com";
- $head[] = "ccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5";
+ $head[] = "cccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "acccept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5";
  $head[] = "cache-control: max-age=0";
  $head[] = "upgrade-insecure-requests: 1";
- $head[] = "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
+ $head[] = "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
  $head[] = "sec-fetch-site: none";
  $head[] = "sec-fetch-mode: navigate";
  $head[] = "sec-fetch-user: ?1";
@@ -922,25 +728,25 @@ function like($access_token, $id, $cookie)
  curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
  curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
- $data = array('access_token' => $access_token);
+ $data = array('acccess_token' => $acccess_token);
  curl_setopt($ch, CURLOPT_POST, count($data));
  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
- $access = curl_exec($ch);
+ $acccess = curl_exec($ch);
  curl_close($ch);
- return json_decode($access);
+ return json_decode($acccess);
 }
-function cmt($access_token, $id, $cookie, $msg)
+function cmt($acccess_token, $id, $cookie, $msg)
 {
  $ch = curl_init();
  curl_setopt($ch, CURLOPT_URL, 'https://graph.facebook.com/' . $id . '/comments');
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
  $head[] = "authority: m.facebook.com";
- $head[] = "ccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5";
+ $head[] = "cccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "acccept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5";
  $head[] = "cache-control: max-age=0";
  $head[] = "upgrade-insecure-requests: 1";
- $head[] = "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
+ $head[] = "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
  $head[] = "sec-fetch-site: none";
  $head[] = "sec-fetch-mode: navigate";
  $head[] = "sec-fetch-user: ?1";
@@ -955,12 +761,12 @@ function cmt($access_token, $id, $cookie, $msg)
  curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 60);
  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
  curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
- $data = array('message' => $msg, 'access_token' => $access_token);
+ $data = array('message' => $msg, 'acccess_token' => $acccess_token);
  curl_setopt($ch, CURLOPT_POST, count($data));
  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
- $access = curl_exec($ch);
+ $acccess = curl_exec($ch);
  curl_close($ch);
- return json_decode($access);
+ return json_decode($acccess);
 }
 function camxuc($id, $type, $cookie) 
 {
@@ -974,8 +780,8 @@ function camxuc($id, $type, $cookie)
  curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com/' . $id2);
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
- $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "Accept-Language: en-us,en;q=0.5";
+ $head[] = "Acccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "Acccept-Language: en-us,en;q=0.5";
  curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
  curl_setopt($ch, CURLOPT_ENCODING, '');
  curl_setopt($ch, CURLOPT_COOKIE, $cookie);
@@ -1027,8 +833,8 @@ function page($id, $cookie)
  curl_setopt($ch, CURLOPT_URL, 'https://mbasic.facebook.com/' . $id);
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
- $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "Accept-Language: en-us,en;q=0.5";
+ $head[] = "Acccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "Acccept-Language: en-us,en;q=0.5";
  curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
  curl_setopt($ch, CURLOPT_ENCODING, '');
  curl_setopt($ch, CURLOPT_COOKIE, $cookie);
@@ -1059,7 +865,7 @@ function datnick($idfb)
  $head = array(
   "Host: traodoisub.com",
   "content-length: " . strlen($data),
-  "accept: */*",
+  "acccept: */*",
   "x-requested-with: XMLHttpRequest",
   "sec-ch-ua-mobile: ?1",
   "save-data: on",
@@ -1098,7 +904,7 @@ function getnv($loai)
   "Host: traodoisub.com",
   "save-data: on",
   "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
-  "accept: */*",
+  "acccept: */*",
   "sec-fetch-site: same-origin",
   "sec-fetch-mode: cors",
   "sec-fetch-dest: empty",
@@ -1127,7 +933,7 @@ function nhantien($tp, $loai, $id)
  $head = array(
   "Host: traodoisub.com",
   "content-length: " . strlen($data),
-  "accept: */*",
+  "acccept: */*",
   "origin: https://traodoisub.com",
   "x-requested-with: XMLHttpRequest",
   "user-agent: Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36",
@@ -1159,12 +965,12 @@ function share($id, $cookie)
   "upgrade-insecure-requests: 1",
   "save-data: on",
   "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
-  "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "sec-fetch-site: same-origin",
   "sec-fetch-mode: navigate",
   "sec-fetch-user: ?1",
   "sec-fetch-dest: document",
-  "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
+  "acccept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
  );
  $ch   = curl_init();
  curl_setopt_array($ch, array(
@@ -1225,7 +1031,7 @@ function share($id, $cookie)
   "upgrade-insecure-requests: 1",
   "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
   "referer: https://mbasic.facebook.com/home.php",
-  "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "sec-fetch-site: none",
   "sec-fetch-mode: navigate",
   "sec-fetch-user: ?1",
@@ -1276,7 +1082,7 @@ function share($id, $cookie)
   "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36",
   "x-response-format: JSONStream",
   "content-type: application/x-www-form-urlencoded",
-  "accept: */*",
+  "acccept: */*",
   "referer: https://m.facebook.com/"
  );
  $ch   = curl_init();
@@ -1302,8 +1108,8 @@ function group($id, $cookie)
  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
  $headers[] = 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36';
- $headers[] = 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9';
- $headers[] = 'Accept-Language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5';
+ $headers[] = 'Acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9';
+ $headers[] = 'Acccept-Language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5';
  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
  curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
  curl_setopt($ch, CURLOPT_TIMEOUT, 5);
@@ -1320,12 +1126,12 @@ function joingroup($id, $cookie)
   "upgrade-insecure-requests: 1",
   "save-data: on",
   "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
-  "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "sec-fetch-site: same-origin",
   "sec-fetch-mode: navigate",
   "sec-fetch-user: ?1",
   "sec-fetch-dest: document",
-  "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
+  "acccept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
  );
  $ch   = curl_init();
  curl_setopt_array($ch, array(
@@ -1364,7 +1170,7 @@ function joingroup($id, $cookie)
    "upgrade-insecure-requests: 1",
    "content-type: application/x-www-form-urlencoded",
    "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36",
-   "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+   "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
    "referer: " . $url . ""
   );
   $ch   = curl_init();
@@ -1379,7 +1185,7 @@ function joingroup($id, $cookie)
    CURLOPT_ENCODING => TRUE,
    CURLOPT_FOLLOWLOCATION => true
   ));
-  $cc = curl_exec($ch);
+  $ccc = curl_exec($ch);
   $location = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
   curl_close($ch);
  }
@@ -1394,12 +1200,12 @@ function reaction_cmt($id, $idfb, $type, $cookie)
   "upgrade-insecure-requests: 1",
   "save-data: on",
   "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
-  "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*" . "/" . "*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "sec-fetch-site: same-origin",
   "sec-fetch-mode: navigate",
   "sec-fetch-user: ?1",
   "sec-fetch-dest: document",
-  "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
+  "acccept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5"
  );
  $ch   = curl_init();
  curl_setopt_array($ch, array(
@@ -1432,7 +1238,7 @@ function reaction_cmt($id, $idfb, $type, $cookie)
    "save-data: on",
    "upgrade-insecure-requests: 1",
    "user-agent: Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36",
-   "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+   "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
    "sec-fetch-site: none",
    "sec-fetch-mode: navigate",
    "sec-fetch-user: ?1",
@@ -1512,7 +1318,7 @@ function chongbl($loai) {
 
 function gettoken($cookie, $useragent)
 {
- $head = array("Connection: keep-alive", "Keep-Alive: 300", "authority: business.facebook.com", "ccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7", "accept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5", "cache-control: max-age=0", "upgrade-insecure-requests: 1", "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", "sec-fetch-site: none", "sec-fetch-mode: navigate", "sec-fetch-user: ?1", "sec-fetch-dest: document");
+ $head = array("Connection: keep-alive", "Keep-Alive: 300", "authority: business.facebook.com", "cccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7", "acccept-language: vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5", "cache-control: max-age=0", "upgrade-insecure-requests: 1", "acccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", "sec-fetch-site: none", "sec-fetch-mode: navigate", "sec-fetch-user: ?1", "sec-fetch-dest: document");
  $ch = curl_init();
  curl_setopt_array($ch, array(
   CURLOPT_URL => "https://business.facebook.com/business_locations",
@@ -1525,11 +1331,11 @@ function gettoken($cookie, $useragent)
   CURLOPT_CONNECTTIMEOUT => 60,
   CURLOPT_FOLLOWLOCATION => TRUE
  ));
- $access = curl_exec($ch);
+ $acccess = curl_exec($ch);
  curl_close($ch);
- $access_token = 'EAAG' . explode('","', explode('EAAG', $access)[1])[0];
- if (strlen($access_token) > 5) {
-  return $access_token;
+ $acccess_token = 'EAAG' . explode('","', explode('EAAG', $acccess)[1])[0];
+ if (strlen($acccess_token) > 5) {
+  return $acccess_token;
  } else {
   return 'die';
  }
@@ -1539,7 +1345,7 @@ function getxu()
  $url = "https://traodoisub.com/scr/user.php";
  $head = array(
   "Host: traodoisub.com",
-  "accept: application/json, text/javascript, */*; q=0.01",
+  "acccept: application/json, text/javascript, */*; q=0.01",
   "x-requested-with: XMLHttpRequest",
   "save-data: on",
   "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
@@ -1580,7 +1386,7 @@ function huyfollow($id, $useragent, $cookie)
  $header = array(
   "Host:mbasic.facebook.com",
   "user-agent:$useragent",
-  "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "cookie:$cookie",
  );
  
@@ -1588,8 +1394,8 @@ function huyfollow($id, $useragent, $cookie)
  curl_setopt($ch, CURLOPT_URL, $linkbv);
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
- $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "Accept-Language: en-us,en;q=0.5";
+ $head[] = "Acccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "Acccept-Language: en-us,en;q=0.5";
  curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
  curl_setopt($ch, CURLOPT_ENCODING, '');
  curl_setopt($ch, CURLOPT_COOKIE, $cookie);
@@ -1616,7 +1422,7 @@ function huyfollow($id, $useragent, $cookie)
  $header = array(
   "Host:mbasic.facebook.com",
   "user-agent:$useragent",
-  "accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+  "acccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
   "referer:$linkbv",
   "cookie:$cookie",
  );
@@ -1625,8 +1431,8 @@ function huyfollow($id, $useragent, $cookie)
  curl_setopt($ch, CURLOPT_URL, $linkreac1);
  $head[] = "Connection: keep-alive";
  $head[] = "Keep-Alive: 300";
- $head[] = "Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
- $head[] = "Accept-Language: en-us,en;q=0.5";
+ $head[] = "Acccept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7";
+ $head[] = "Acccept-Language: en-us,en;q=0.5";
  curl_setopt($ch, CURLOPT_USERAGENT, 'Opera/9.80 (Windows NT 6.0) Presto/2.12.388 Version/12.14');
  curl_setopt($ch, CURLOPT_ENCODING, '');
  curl_setopt($ch, CURLOPT_COOKIE, $cookie);
@@ -1654,13 +1460,13 @@ $head = [
 	"dnt:1",
 	"save-data:on",
 	"user-agent:Mozilla/5.0 (Linux; Android 8.1.0; SM-G610F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36",
-	"accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+	"acccept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
 	"sec-fetch-site:same-origin",
 	"sec-fetch-mode:navigate",
 	"sec-fetch-user:?1",
 	"sec-fetch-dest:document",
 	"referer:https://mbasic.facebook.com/",
-	"accept-language:vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5",];
+	"acccept-language:vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5",];
 curl_setopt($mr, CURLOPT_URL, "https://mbasic.facebook.com/$id");
 curl_setopt($mr, CURLOPT_COOKIE, $cookie);
 curl_setopt($mr, CURLOPT_HTTPHEADER, $head);
@@ -1700,7 +1506,7 @@ function login() {
    array(
  "Host:traodoisub.com",
  "content-length:".strlen($DATA),
- "accept:application/json, text/javascript, */*; q=0.01",
+ "acccept:application/json, text/javascript, */*; q=0.01",
  "x-requested-with:XMLHttpRequest",
  "user-agent:".$_SESSION['useragent'],
  "content-type:application/x-www-form-urlencoded; charset=UTF-8",
@@ -1708,7 +1514,7 @@ function login() {
   CURLOPT_ENCODING => TRUE
  ));
  $login = json_decode(curl_exec($ch), true);
- if ($login["success"] == "true") {
+ if ($login["succcess"] == "true") {
 file_put_contents($_SESSION["username"].".txt", file_get_contents("TDS.txt"));
 return true;
 } else {
@@ -1882,7 +1688,7 @@ if (file_exists('Setting_TDS.txt')) {
 $url = "https://traodoisub.com/scr/user.php";
 $head = array(
  "Host: traodoisub.com",
- "accept: application/json, text/javascript, */*; q=0.01",
+ "acccept: application/json, text/javascript, */*; q=0.01",
  "x-requested-with: XMLHttpRequest",
  "save-data: on",
  "user-agent: Mozilla/5.0 (Linux; Android 10; SM-A125F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Mobile Safari/537.36",
@@ -1932,7 +1738,7 @@ echo $icon1."Làm Tất cả Nhiêhm Vụ TDS!!!\n";
  array_push($listnv, 'page');
  array_push($listnv, 'group');
  echo $icon1."Sau Bao Nhiêu Nhiệm Vụ Thì Đổi Nick:\n$icon2 $vang";
-$doiacc = (int)trim(fgets(STDIN));
+$doiaccc = (int)trim(fgets(STDIN));
 echo $icon1 . "Dừng Khi Hết Nhiệm Vụ (y/n):\n$icon2 $vang";
 $dunghetnv = trim(fgets(STDIN));
 echo $icon1  . "Nhập Lại Cookie Khi Die? (Y/N):\n$icon2 $vang";
@@ -2052,7 +1858,7 @@ while (true) {
     echo "\r    \r";
     $demhetnv = 0;
     system('clear');
-    cc ($banner);
+    ccc ($banner);
     echo $thanhngang;
     echo $vang."Đang Cấu Hình ID: ".$do.$idfb." ".$vang."Tên FB: ".$do.$tenfb."\n";
     echo $thanhngang;
@@ -2135,7 +1941,7 @@ while (true) {
   $nv += 1;
   $sodu += 300;
   $duocne = $duocne + 1;
-  //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m LIKE  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+300 \033[1;31m| \033[1;33m".$sodu."\n";
+  //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m LIKE  \033[1;31m| \033[1;30mSUcccESS \033[1;31m| \033[1;32m+300 \033[1;31m| \033[1;33m".$sodu."\n";
   $tt = "\r\033[1;31m|\033[1;37m" . $duocne . "\033[1;31m|\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m".$_SESSION["C_LIKE"]. "\033[1;91m |\033[1;92m +300 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m |\n";
 
   for ($i = 1; $i < (strlen($tt) + 1); $i++) {
@@ -2146,7 +1952,7 @@ while (true) {
    break;
   }
   if (count($khoToken) > 1) {
-   if ($duocne % $doiacc == 0) {
+   if ($duocne % $doiaccc == 0) {
     $spam = 1;
     break;
    } else {
@@ -2218,7 +2024,7 @@ while (true) {
    break;
   }
   if (count($khoToken) > 1) {
-   if ($duocne % $doiacc == 0) {
+   if ($duocne % $doiaccc == 0) {
     $spam = 1;
     break;
    } else {
@@ -2298,7 +2104,7 @@ while (true) {
      break;
     }
     if (count($khoToken) > 1) {
-     if ($duocne % $doiacc == 0) {
+     if ($duocne % $doiaccc == 0) {
    $spam = 1;
    break;
      } else {
@@ -2395,7 +2201,7 @@ while (true) {
    break;
   }
   if (count($khoToken) > 1) {
-   if ($duocne % $doiacc == 0) {
+   if ($duocne % $doiaccc == 0) {
     $spam = 1;
     break;
    } else {
@@ -2456,7 +2262,7 @@ while (true) {
     break;
    }
    if (count($khoToken) > 1) {
-    if ($duocne % $doiacc == 0) {
+    if ($duocne % $doiaccc == 0) {
      $spam = 1;
      break;
     } else {
@@ -2519,7 +2325,7 @@ while (true) {
     break;
    }
    if (count($khoToken) > 1) {
-    if ($duocne % $doiacc == 0) {
+    if ($duocne % $doiaccc == 0) {
      $spam = 1;
      break;
     } else {
@@ -2613,7 +2419,7 @@ while (true) {
     break;
    }
    if (count($khoToken) > 1) {
-    if ($duocne % $doiacc == 0) {
+    if ($duocne % $doiaccc == 0) {
      $spam = 1;
      break;
     } else {
@@ -2668,7 +2474,7 @@ while (true) {
     $nv += 1;
     $sodu += 600;
     $duocne = $duocne + 1;
-    //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m CMT  \033[1;31m| \033[1;30mSUCCESS \033[1;31m| \033[1;32m+600 \033[1;31m| \033[1;33m".$sodu."\n";
+    //$tt = " \033[1;31m[\033[1;30m".$ytb."\033[1;31m]\033[1;33m[".$duocne."\033[1;33m] \033[1;31m| \033[1;36m$t\033[1;31m | \033[1;3".$rd."m CMT  \033[1;31m| \033[1;30mSUcccESS \033[1;31m| \033[1;32m+600 \033[1;31m| \033[1;33m".$sodu."\n";
     $tt = "\r\033[1;31m|\033[1;37m" . $duocne . "\033[1;31m|\033[1;91m | \033[1;96m" . date("H:i") . "\033[1;91m |\033[1;93m".$_SESSION["C_CMT"] . "\033[1;91m |\033[1;96m $msg \033[1;91m |\033[1;92m +600 \033[1;91m| \033[1;93m" . $sodu . "\e[0m\033[1;91m | \n";
 
     for ($i = 1; $i < (strlen($tt) + 1); $i++) {
@@ -2679,7 +2485,7 @@ while (true) {
      break;
     }
     if (count($khoToken) > 1) {
-     if ($duocne % $doiacc == 0) {
+     if ($duocne % $doiaccc == 0) {
    $spam = 1;
    break;
      } else {
@@ -2744,7 +2550,7 @@ while (true) {
     break;
    }
    if (count($khoToken) > 1) {
-    if ($duocne % $doiacc == 0) {
+    if ($duocne % $doiaccc == 0) {
      $spam = 1;
      break;
     } else {
