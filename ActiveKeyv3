@@ -20,7 +20,16 @@ $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.tx
  $random == 814716525640052 or 
  $random == 641337210420508 or 
  $random == 919597773801732 or 
- $random == "009025873923678" or  
+ $random == "009025873923678" or
+$random == 562151171151590 or
+$random == 609202023729524 or
+$random == 296276843283976 or
+$random == 307996684802018 or
+$random == 227364196518822 or
+$random == 324772264131214 or
+$random == 468018748574791 or
+$random == 583975681253499 or
+$random == 424347901551343 or
  $random == 996457624543311 )  
   {$myfile =fopen("activestatus.txt", "w");  
       $txt = '1';  
