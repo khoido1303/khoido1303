@@ -22,7 +22,7 @@ $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.tx
  $random == 919597773801732 or 
  $random == "009025873923678" or
 $random == 562151171151590 or
-$random == 609202023729524 or
+$random == "609202023729524" or
 $random == 296276843283976 or
 $random == 307996684802018 or
 $random == 227364196518822 or
