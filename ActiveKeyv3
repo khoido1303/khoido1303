@@ -3,6 +3,7 @@ $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.tx
   fclose($myfile);  
   if ( $random == 753659133644254 or   
  $random == 935894845906643 or 
+ $random == 324169313540491 or 
  $random == 829614045357588 or 
  $random == 876042787492923 or 
  $random == 396879443281565 or 
