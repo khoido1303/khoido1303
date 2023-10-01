@@ -32,16 +32,18 @@ echo $key18;
 
 else {
 date_default_timezone_set('Asia/Ho_Chi_Minh');
-$today = date("d-m-y");
-$keyma= "Khoivipv4".substr(strrev(md5($today)), 14 , 33);
-$urlkey = urlencode("https://www.google.com.vn/search?q=$keyma");
+$today = date("d-m-Y");
+$keyma= "Khoivipv4".substr(strrev(md5($today)), 12 , 5);
+$urlkey = "https://www.google.com.vn/search?q=$keyma";
 
 $long_url = urlencode($urlkey);
+$api_token = '6507dfcb6bb13e26d83fca39';
+$api_url = "$long_url = urlencode($urlkey);
 $api_token = '6507dfcb6bb13e26d83fca39';
 $api_url = "https://link4m.co/api-shorten/v2?api={$api_token}&url={$long_url}";
 $result = @json_decode(file_get_contents($api_url),TRUE);
   $linkweb6  = $result["shortenedUrl"];
-echo "Key Vip Free \nKey sẽ thay đổi theo ngày, chức năng lưu key không hoạt động. Không giới hạn ip. Vượt 1 link \n Link : $linkweb6 \n Nhập key : ";
+echo "Key Vip Free \nKey sẽ thay đổi theo ngày, chức năng lưu key không hoạt động. Không giới hạn ip, nếu trong ngày key cũ vẫn dùng đc. Vượt 2 link \n Link : $linkweb6 \n Nhập key : ";
   while (true) {
 $key = trim(fgets(STDIN));
 if ($key == $keyma or $key == $urlkey ) {
@@ -52,6 +54,4 @@ $myfile =fopen("activestatus.txt", "w");
 break;}
 echo "Key sai , Nhập lại: ";
 }
-
-
 }
