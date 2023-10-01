@@ -59,7 +59,7 @@ $linkwebdilink = file_get_contents("$api_url");
 $linkwebdilink = explode('"', $linkwebdilink);
 $linkwebdilink = $linkwebdilink[3];
   $linkweb6 = $linkwebdilink;
-echo "Key Vip Free \nKey sẽ thay đổi theo ngày, chức năng lưu key không hoạt động. Không giới hạn ip. Vượt 2 link \n Link : $linkweb6 \n Nhập key : ";
+echo "Key Vip Free \nKey sẽ thay đổi theo ngày, chức năng lưu key không hoạt động. Không giới hạn ip.\nLưu ý tắt vpn nếu không link sẽ bị lỗi. \n Vượt 2 link \n Link : $linkweb6 \n Nhập key : ";
   while (true) {
 $chon = trim(fgets(STDIN));
 if ($key == $keyma) {break;}
