@@ -66,8 +66,8 @@ $linkwebdilink = $linkwebdilink[3];
   $linkweb6 = $linkwebdilink;
 echo "Key Vip Free \nKey sẽ thay đổi theo ngày, chức năng lưu key không hoạt động. Không giới hạn ip.\nLưu ý tắt vpn nếu không link sẽ bị lỗi. \n Vượt 2 link \n Link : $linkweb6 \n Nhập key : ";
   while (true) {
-$chon = trim(fgets(STDIN));
-if ($key == $keyma) {$myfile =fopen("activestatus.txt", "w");  
+$chonnhap = trim(fgets(STDIN));
+if ($chonnhap == $keyma) {$myfile =fopen("activestatus.txt", "w");  
       $txt = '1';  
       fwrite($myfile, $txt);  
       fclose($myfile);  break;}
