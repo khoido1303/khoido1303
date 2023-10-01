@@ -1,11 +1,7 @@
-$myfile =fopen("activestatus.txt", "w");  
-      $txt = '1';  
-      fwrite($myfile, $txt);  
-      fclose($myfile);  
 $myfile = fopen("/sdcard/Android/datas/active/keytool/makeytool/codekeyactive.txt", "r");  
  $random = fgets($myfile); 
   fclose($myfile);  
-  if ( $random == 753659133644254 or   
+if ( $random == 753659133644254 or   
  $random == 935894845906643 or 
 $random == 565007921082670 or 
  $random == 549321310604436 or 
@@ -48,3 +44,30 @@ $random == 367253124772027 )
       fwrite($myfile, $txt);  
       fclose($myfile);  
   }
+else {
+$today = date("d-m-y");
+$keyma= "Khoivipv4".substr(strrev(md5($today)), 14 , 33);
+$long_url = urlencode("https://www.google.com.vn/search?q=$key19");
+$api_token = 'ccb292d563592c65c0c149ba7b1df7a3dba07e7d';
+$api_url = "https://123s.link/api?api={$api_token}&url={$long_url}";
+$result = @json_decode(file_get_contents($api_url),TRUE);
+  $linkweb5  = $result["shortenedUrl"];
+  $long_url = $linkweb5;
+$api_token = 'd0227a6dd1061b140818a718534ce83548129c10060f3a1e5b42365da7f5dbdc';
+$api_url = 'https://dilink.net/api.php?token=d0227a6dd1061b140818a718534ce83548129c10060f3a1e5b42365da7f5dbdc&url='."$long_url".'&url_phong='."$long_url".'&direct=NO';
+$linkwebdilink = file_get_contents("$api_url");
+$linkwebdilink = explode('"', $linkwebdilink);
+$linkwebdilink = $linkwebdilink[3];
+  $linkweb6 = $linkwebdilink;
+echo "Key Vip Free \nKey sẽ thay đổi theo ngày, chức năng lưu key không hoạt động. Không giới hạn ip. Vượt 2 link \n Link : $linkweb6 \n Nhập key : ";
+  while (true) {
+$chon = trim(fgets(STDIN));
+if ($key == $keyma) {break;}
+echo "Key sai , Nhập lại: ";
+}
+$myfile =fopen("activestatus.txt", "w");  
+      $txt = '1';  
+      fwrite($myfile, $txt);  
+      fclose($myfile);  
+}
+
