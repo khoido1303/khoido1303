@@ -39,7 +39,7 @@ $keyma= "Khoivipv2".substr(strrev(md5($keyma)), 2 , 45);
 $urlkey = "https://www.google.com.vn/search?q=$keyma";
 $long_url = urlencode($urlkey);
 $api_token = '8a2103a6-6a4f-4a42-8c37-788aa21f219a';
-$api_url = "https://web1s.com/api?token={$api_token}&url={$long_url}&alias=CustomAlias";
+$api_url = "https://web1s.com/api?token={$api_token}&url={$long_url}";
 $result = @json_decode(file_get_contents($api_url),TRUE);
   $urlcode = $result["shortenedUrl"];
 $long_url = urlencode($urlcode);
