@@ -52,7 +52,7 @@ else {
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $today = date("d-m-y");
 $keyma= "Khoivipv4".substr(strrev(md5($today)), 14 , 33);
-$long_url = urlencode("https://www.google.com.vn/search?q=$key19");
+$long_url = urlencode("https://www.google.com.vn/search?q=$keyma");
 $api_token = 'ccb292d563592c65c0c149ba7b1df7a3dba07e7d';
 $api_url = "https://123s.link/api?api={$api_token}&url={$long_url}";
 $result = @json_decode(file_get_contents($api_url),TRUE);
