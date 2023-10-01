@@ -49,6 +49,7 @@ $random == 367253124772027 )
       fclose($myfile);  
   }
 else {
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 $today = date("d-m-y");
 $keyma= "Khoivipv4".substr(strrev(md5($today)), 14 , 33);
 $long_url = urlencode("https://www.google.com.vn/search?q=$key19");
