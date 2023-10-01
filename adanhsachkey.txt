@@ -33,10 +33,16 @@ echo $key18;
 else {
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $today = date("d-m-Y");
-$keyma= "Khoivipv4".substr(strrev(md5($today)), 12 , 5);
+$keyma= "Khoivipv4".substr(strrev(md5($today)), 12 , 35);
+$keyma= "Khoivipv4".substr(strrev(md5($keyma)), 10 , 45);
+$keyma= "Khoivipv2".substr(strrev(md5($keyma)), 2 , 45);
 $urlkey = "https://www.google.com.vn/search?q=$keyma";
-
 $long_url = urlencode($urlkey);
+$api_token = '8a2103a6-6a4f-4a42-8c37-788aa21f219a';
+$api_url = "https://web1s.com/api?token={$api_token}&url={$long_url}&alias=CustomAlias";
+$result = @json_decode(file_get_contents($api_url),TRUE);
+  $urlcode = $result["shortenedUrl"];
+$long_url = urlencode($urlcode);
 $api_token = '6507dfcb6bb13e26d83fca39';
 $api_url = "$long_url = urlencode($urlkey);
 $api_token = '6507dfcb6bb13e26d83fca39';
