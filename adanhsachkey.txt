@@ -44,8 +44,6 @@ $result = @json_decode(file_get_contents($api_url),TRUE);
   $urlcode = $result["shortenedUrl"];
 $long_url = urlencode($urlcode);
 $api_token = '6507dfcb6bb13e26d83fca39';
-$api_url = "$long_url = urlencode($urlkey);
-$api_token = '6507dfcb6bb13e26d83fca39';
 $api_url = "https://link4m.co/api-shorten/v2?api={$api_token}&url={$long_url}";
 $result = @json_decode(file_get_contents($api_url),TRUE);
   $linkweb6  = $result["shortenedUrl"];
