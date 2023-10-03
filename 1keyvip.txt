@@ -1,0 +1,25 @@
+	if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
+	$keyvipcheck =	file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
+	}
+ if (
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" or
+ )
+ {file_put_contents('activestatus.txt', 1);}
