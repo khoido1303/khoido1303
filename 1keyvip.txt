@@ -20,6 +20,6 @@
  $keyvipcheck == "khoidzvcl" or
  $keyvipcheck == "khoidzvcl" or
  $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "khoidzvcl" 
  )
  {file_put_contents('activestatus.txt', 1);}
