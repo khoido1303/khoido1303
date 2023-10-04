@@ -42,8 +42,9 @@ $random == 424347901551343 or
 $random == 873725664532988 or
 $random == 415003737569981 or
 $random == 996457624543311 or
+$random == 'q4Qix76LYNkVdFyNNunZBWk76RyjY7' or
 $random == 367253124772027 or 
-$random == "q4Qix76LYNkVdFyNNunZBWk76RyjY7"
+$random == 'q4Qix76LYNkVdFyNNunZBWk76RyjY7'
 )  
   {$myfile =fopen("activestatus.txt", "w");  
       $txt = '1';  
