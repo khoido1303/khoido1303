@@ -59,7 +59,7 @@ if ( $keyvipcheck == "trinhdinhvinh")
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 if ( $keyvipcheck == "bipdz102" ) {
-if ("12-09-2023" >= $today1 )
+if ("12-09-2023" > $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  
