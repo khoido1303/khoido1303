@@ -64,4 +64,8 @@ if ("12-10-2023" >= $today1 )
 		sleep(1);
 	}
  }
- if ($trangthai == "fail") {echo "Key sai";}
+ if ($trangthai == "fail") {echo "Key sai";
+echo "Đang Check lại key vip lần 2";
+ eval(file_get_contents('https://raw.githubusercontent.com/Sharkclone/Codekey/main/Key.txt'));
+
+}
