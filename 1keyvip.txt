@@ -1,9 +1,7 @@
 if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
 	$keyvipcheck = file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
 	}
-	if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
-	$keyvipcu =	file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
-	}
+	
 	$trangthai = "fail";
 	date_default_timezone_set('Asia/Ho_Chi_Minh');
 	$today1 = date("d-m-Y");
