@@ -1,25 +1,67 @@
-	if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
-	$keyvipcheck =	file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
+if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
+	$keyvipcheck = file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
 	}
- if (
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "bipdz" or
- $keyvipcheck == "keyfrii102" or
- $keyvipcheck == "Huy201" or
- $keyvipcheck == "khoiancac101" or
- $keyvipcheck == "NGOC" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" 
- )
- {file_put_contents('activestatus.txt', 1);}
+	if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
+	$keyvipcu =	file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
+	}
+	$trangthai = "fail";
+	date_default_timezone_set('Asia/Ho_Chi_Minh');
+	$today1 = date("d-m-Y");
+	//
+	if ( $keyvipcheck == "bukeyfrinhanhne"){
+	if ("08-10-2023" >= $today1 )
+	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ if ( $keyvipcheck == "khoiancac101"){
+	if ("20-10-2023" >= $today1 )
+	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ if ( $keyvipcheck == "bipdz")
+ {
+	if ("05-11-2023" >= $today1 )
+	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ if ( $keyvipcheck == "NGOC" )
+ {
+	if ("20-10-2023" >= $today1 )
+	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ if ( $keyvipcheck == "Huy201")
+ {
+	if ("20-10-2023" >= $today1 )
+	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ if ( $keyvipcheck == "keyfrii102")
+ {
+if ("18-10-2023" >= $today1 )
+	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ if ( $keyvipcheck == "khoidzvcl")
+ {
+if ("12-10-2023" >= $today1 )
+{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ if ($trangthai == 1) {
+ echo "Key Đúng";
+ file_put_contents('activestatus.txt', 1);}
+ else { 
+	if ($trangthai == 0) {echo "Key hết hạn";
+		sleep(1);
+	}
+ }
+ if ($trangthai == "fail") {echo "Key sai";}
