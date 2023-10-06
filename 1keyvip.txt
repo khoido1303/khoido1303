@@ -4,7 +4,7 @@
  if (
  $keyvipcheck == "khoidzvcl" or
  $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "keyfrii102" or
  $keyvipcheck == "khoidzvcl" or
  $keyvipcheck == "khoidzvcl" or
  $keyvipcheck == "khoidzvcl" or
