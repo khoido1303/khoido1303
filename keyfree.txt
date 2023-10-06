@@ -1,3 +1,0 @@
-exit ("Bạn đang sài phiên bản cũ");
-$key = "long431305";
-$keyb = '1';
