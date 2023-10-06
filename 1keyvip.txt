@@ -7,7 +7,7 @@
  $keyvipcheck == "keyfrii102" or
  $keyvipcheck == "Huy201" or
  $keyvipcheck == "khoiancac101" or
- $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "NGOC" or
  $keyvipcheck == "khoidzvcl" or
  $keyvipcheck == "khoidzvcl" or
  $keyvipcheck == "khoidzvcl" or
