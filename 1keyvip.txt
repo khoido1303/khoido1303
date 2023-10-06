@@ -3,7 +3,7 @@
 	}
  if (
  $keyvipcheck == "khoidzvcl" or
- $keyvipcheck == "khoidzvcl" or
+ $keyvipcheck == "bipdz" or
  $keyvipcheck == "keyfrii102" or
  $keyvipcheck == "khoidzvcl" or
  $keyvipcheck == "khoidzvcl" or
