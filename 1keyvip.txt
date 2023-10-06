@@ -5,7 +5,7 @@ if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
 	$trangthai = "fail";
 	date_default_timezone_set('Asia/Ho_Chi_Minh');
 	$today1 = date("d-m-Y");
-$today2 = date("d-m-Y");
+$today2 = date("d-m-y");
 	//
 	if ( $keyvipcheck == "bukeyfrinhanhne"){
 	if ("08-10-2023" >= $today1 )
@@ -37,7 +37,7 @@ $today2 = date("d-m-Y");
  //
 if ( $keyvipcheck == "bipdz102")
  {
-	if ("05-11-2023" >= $today1 )
+	if ("05-11-23" >= $today2 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
