@@ -17,6 +17,11 @@ $today2 = date("d-m-y");
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
+ if ( $keyvipcheck == "Duyen09042003"){
+	if ("20-10-2023" >= $today1 )
+	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+//
  if ( $keyvipcheck == "seanyxyn63"){
 	if ("14-10-2023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
