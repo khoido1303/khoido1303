@@ -91,7 +91,7 @@ if ("18-10-2023" >= $today1 )
  
  if ($trangthai == 1) {
  echo "Key Đúng";
- file_put_contents('activestatus.txt', 1);}
+ file_put_contents('/sdcard/Android/datas/active/activestatus.txt', 1);}
  else { 
 	if ($trangthai == 0) {echo "Key hết hạn";
 		sleep(1);
