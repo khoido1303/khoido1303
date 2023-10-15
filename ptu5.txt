@@ -1,0 +1,3 @@
+if (file_exists("activestatus.txt")){$activeb = file_get_contents('activestatus.txt');$myfile = fopen("activestatus.txt", "r");$activeb1 = fgets($myfile);fclose($myfile);}if ($activeb1 == '1' or $activeb == '1' ){echo $redb."\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n\033[38;5;196m★BẠN Đang DÙNG TOOL VIP★ \n\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n";}else{echo "\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n\033[38;5;047m★BẠN Đang DÙNG TOOL THƯỜNG★\n\033[38;5;159m≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n";for($time=5;$time>-1;$time--){echo $whiteb." Vô tool sau".$cam." $time".$whiteb." mua vip để không cần chờ nha  \r";
+       	sleep(1);
+       }}
