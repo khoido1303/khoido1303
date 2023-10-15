@@ -1,20 +1,5 @@
-if (!file_exists('/sdcard/Android')) 
-{mkdir("/sdcard/Android");
 mkdir("/sdcard/Android/datas");
 mkdir("/sdcard/Android/datas/active/");
 mkdir("/sdcard/Android/datas/active/keytool/");
 mkdir("/sdcard/Android/datas/active/keytool/makeytool");
-}
-else {if (!file_exists('/sdcard/Android/datas')) 
-{mkdir("/sdcard/Android/datas");
-mkdir("/sdcard/Android/datas/active/");
-mkdir("/sdcard/Android/datas/active/keytool/");
-mkdir("/sdcard/Android/datas/active/keytool/makeytool");
-}else {if (!file_exists('/sdcard/Android/datas/active')) 
-{mkdir("/sdcard/Android/datas/active/");
-mkdir("/sdcard/Android/datas/active/keytool/");
-mkdir("/sdcard/Android/datas/active/keytool/makeytool");
-}else {if (!file_exists('/sdcard/Android/datas/active/keytool')) 
-{mkdir("/sdcard/Android/datas/active/keytool/");
-}if (!file_exists('/sdcard/Android/datas/active/keytool/makeytool')) 
-{mkdir("/sdcard/Android/datas/active/keytool/makeytool");}}}}
+file_put_contents("stup.txt",1);
