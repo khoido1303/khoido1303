@@ -1,5 +1,6 @@
+
 if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
-	$keyvipcheck = "keynammoi";
+	$keyvipcheck = file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
 	}
 	
 	$trangthai = "fail";
