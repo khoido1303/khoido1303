@@ -1,99 +1,97 @@
 if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
-	$keyvipcheck = file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
+	$keyvipcheck = "keynammoi";
 	}
 	
 	$trangthai = "fail";
 	date_default_timezone_set('Asia/Ho_Chi_Minh');
-	$today1 = date("d-m-Y");
+	$today1 = date("dmY");
 	//
-
-
 	if ( $keyvipcheck == "keyvipfri111"){
-	if ("18-10-2023" >= $today1 )
+	if ("18102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
-	$today1 = date("d-m-Y");
+	$today1 = date("dmY");
  if ( $keyvipcheck == "khoiancac101"){
-	if ("20-10-2023" >= $today1 )
+	if ("20102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
 
  if ( $keyvipcheck == "15072005"){
-	if ("20-11-2023" >= $today1 )
+	if ("20112023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
 
-if ( $keyvipcheck == "nammoi"){
-	if ("01-11-2023" >= $today1 )
+if ( $keyvipcheck == "keynammoi"){
+	if ("30112023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
 
  if ( $keyvipcheck == "Duyen09042003"){
-	if ("22-10-2023" >= $today1 )
+	if ("22102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
  if ( $keyvipcheck == "Key golike ý chứ"){
-	if ("22-10-2023" >= $today1 )
+	if ("22102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
  if ( $keyvipcheck == "seanyxyn63"){
-	if ("14-10-2023" >= $today1 )
+	if ("14102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
  
  if ( $keyvipcheck == "NGOC" )
  {
-	if ("20-10-2023" >= $today1 )
+	if ("20102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
  if ( $keyvipcheck == "Huy201")
  {
-	if ("20-10-2023" >= $today1 )
+	if ("20102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
  if ( $keyvipcheck == "keyfrii102")
  {
-if ("18-10-2023" >= $today1 )
+if ("18102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
  if ( $keyvipcheck == "khoidzvcl")
  {
-if ("12-09-2023" >= $today1 )
+if ("12092023" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
 
 if ( $keyvipcheck == "Tuankhoaito")
- {if ("24-10-2023" >= $today1 )
+ {if ("24102023" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 if ( $keyvipcheck == "trinhdinhvinh")
- {if ("24-10-2023" >= $today1 )
+ {if ("24102023" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
 if ( $keyvipcheck == "bipdz102" ) {
-if ("5-11-2023" >= $today1 )
+if ("5112023" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
 if ( $keyvipcheck == "long412k" ) {
-if ("15-10-2023" >= $today1 )
+if ("15102023" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
 if ( $keyvipcheck == "bovkid" ) {
-if ("18-10-2023" >= $today1 )
+if ("18102023" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
