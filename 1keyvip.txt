@@ -99,13 +99,14 @@ if ("18102023" >= $today1 )
 
 //
 if ( $keyvipcheck == "nguyencuong" ) {
-if ("18102023" >= 0 )
-{$trangthai = 1 ;} else {$trangthai = 0 ;}
- }
+{$trangthai = 1 ;}
 //
-
-
-
+if ( $keyvipcheck == "nguyencuong" ) {
+{$trangthai = 1 ;}
+//
+if ( $keyvipcheck == "nguyencuong" ) {
+{$trangthai = 1 ;}
+//
 
  
  
