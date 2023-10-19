@@ -7,8 +7,8 @@ if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
 	date_default_timezone_set('Asia/Ho_Chi_Minh');
 	$today1 = date("dmY");
 	//
-	if ( $keyvipcheck == "keyvipfri111"){
-	if ("18102023" >= $today1 )
+	if ( $keyvipcheck == "keyvipngay"){
+	if ("22102023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
