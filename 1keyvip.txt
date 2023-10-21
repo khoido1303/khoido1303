@@ -49,7 +49,7 @@ if ( $keyvipcheck == "keynammoi"){
 
  if ( $keyvipcheck == "NGOC" )
  {
-        if ("20102023" >= $today1 )
+        if ("26102023" >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
