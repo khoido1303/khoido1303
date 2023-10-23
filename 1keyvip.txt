@@ -37,7 +37,7 @@ if ( $keyvipcheck == "keynammoi"){
  }
 //
  if ( $keyvipcheck == "Key golike ý chứ"){
-        if ("22112023" >= $today1 )
+        if ("23112023" >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
