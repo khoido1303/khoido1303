@@ -14,7 +14,7 @@ if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
  //
         $today1 = date("dmY");
  if ( $keyvipcheck == "khoiancac101"){
-        if ("20102023" >= $today1 )
+        if ("20112023" >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
