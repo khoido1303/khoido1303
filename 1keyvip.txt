@@ -31,7 +31,7 @@ if ( $keyvipcheck == "keynammoi"){
 //
 
  if ( $keyvipcheck == "Duyen09042003"){
-        if ("20231022" >= $today1 )
+        if ("20231122" >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
