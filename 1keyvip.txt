@@ -44,28 +44,28 @@ if ( $keyvipcheck == "keynammoi"){
 
  if ( $keyvipcheck == "NGOC" )
  {
-        if ("26102023" >= $today1 )
+        if ("20231026" >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
  if ( $keyvipcheck == "keyfrii102")
  {
-if ("18102023" >= $today1 )
+if ("20231018" >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
 
 if ( $keyvipcheck == "Tuankhoaito")
- {if ("24102023" >= $today1 )
+ {if ("20231024" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 if ( $keyvipcheck == "trinhdinhvinh")
- {if ("24102023" >= $today1 )
+ {if ("20231024" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
 if ( $keyvipcheck == "bipdz102" ) {
-if ("5112023" >= $today1 )
+if ("20231105" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
