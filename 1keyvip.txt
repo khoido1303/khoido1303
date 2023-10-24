@@ -28,6 +28,11 @@ if ( $keyvipcheck == "hieunk"){
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
+if ( $keyvipcheck == "mjsuon95"){
+        if ("20231124" >= $today1 )
+        {$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+//
 
 
 if ( $keyvipcheck == "keynammoi"){
