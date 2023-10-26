@@ -67,7 +67,7 @@ if ("20231018" >= $today1 )
  //
 
 if ( $keyvipcheck == "Tuankhoaito")
- {if ("20231024" >= $today1 )
+ {if ("20231115" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 if ( $keyvipcheck == "trinhdinhvinh")
