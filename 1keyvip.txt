@@ -96,13 +96,13 @@ if ( $keyvipcheck == "nguyencuong" )
 
 //
 
-if ( $keyvipcheck == "Huy201" ) 
+if ( $keyvipcheck == "huyhaika" ) 
 {$trangthai = 1 ;}
 //
-if ( $keyvipcheck == "Huy201" ) 
+if ( $keyvipcheck == "huyhaika" ) 
 {$trangthai = 1 ;}
 //
-if ( $keyvipcheck == "Huy201" ) 
+if ( $keyvipcheck == "huyhaika" ) 
 {$trangthai = 1 ;}
 //
 
