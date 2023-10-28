@@ -80,6 +80,11 @@ if ("20231105" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
+if ( $keyvipcheck == "Taocode30" ) {
+if ("20231128" >= $today1 )
+{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+//
 
 //
 
