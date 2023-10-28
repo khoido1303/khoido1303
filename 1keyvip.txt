@@ -99,9 +99,12 @@ if ( $keyvipcheck == "nguyencuong" )
 if ( $keyvipcheck == "huyhaika" ) 
 {$trangthai = 1 ;}
 //
+
 if ( $keyvipcheck == "huyhaika" ) 
 {$trangthai = 1 ;}
+
 //
+
 if ( $keyvipcheck == "huyhaika" ) 
 {$trangthai = 1 ;}
 //
