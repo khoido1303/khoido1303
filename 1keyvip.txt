@@ -1,5 +1,11 @@
-if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
-        $keyvipcheck = file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
+      if (strtoupper(substr(PHP_OS, 0, 3)) === 'LIN') 
+{  $files = "/sdcard/Android/datas/FileLuuKeyVip.txt";
+}else 
+{  $files = "FileLuuKeyVip.txt";
+}
+
+if (file_exists($files)) {
+        $keyvipcheck = file_get_contents("$files");
         }
 
         $trangthai = 3;
