@@ -31,3 +31,6 @@ usleep($c);
 echo $icon1."[13] Cách lấy Cookie Full quyền".$yellowb." (Cookie) \n";
 usleep($c);
 echo $redb.$thanhngang;
+usleep($c);
+echo $icon1."[16] Tool Get ID Tiktok".$yellowb." (Info) \n";
+echo $redb.$thanhngang;
