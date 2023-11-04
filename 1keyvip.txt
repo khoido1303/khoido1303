@@ -91,7 +91,11 @@ if ("20231128" >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 //
-
+if ( $keyvipcheck == "ngoctuandepzainhatthegioi" ) {
+if ("20231107" >= $today1 )
+{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+//
 //
 
 if ( $keyvipcheck == "nguyencuong" ) 
