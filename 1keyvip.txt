@@ -94,6 +94,14 @@ if ( $keyvipcheck == "Tuankhoaito")
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
+if ( $keyvipcheck == "dangxuanbac2k4")
+ {
+       $ngayhethan ="20231109" ;
+
+       if ( $ngayhethan >= $today1 )
+{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
 else
 if ( $keyvipcheck == "Taocode30" ) {
        $ngayhethan = "20231128" ;
