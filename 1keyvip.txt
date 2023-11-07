@@ -157,7 +157,4 @@ $trangthai = explode ('|', $trangthai )[0];
         }
  }
  if ($trangthai == "3") {echo "Key sai";
-echo "Đang Check lại key vip lần 2";
- eval(file_get_contents('https://raw.githubusercontent.com/Sharkclone/Codekey/main/Key.txt'));
-
 }
