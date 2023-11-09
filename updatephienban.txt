@@ -15,4 +15,4 @@ eval(file_get_contents("https://raw.githubusercontent.com/hcodz/cckwob/main/upda
     exit('php '. $file_name);
   }}
 else {
-echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\n";
+echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\n";}
