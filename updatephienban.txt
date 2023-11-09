@@ -13,4 +13,6 @@ eval(file_get_contents("https://raw.githubusercontent.com/hcodz/cckwob/main/upda
     { echo "Tải File thành công name : $file_name \n"; } else
     { echo "Tải File thất bại\n."; }
     exit('php '. $file_name);
-  }]
+  }}
+else {
+echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\n";
