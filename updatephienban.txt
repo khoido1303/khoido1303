@@ -1,5 +1,6 @@
 $phienban = phienban();
 if ($phienban <81 ) {
+echo "Bạn đang sài phiên bản cũ. Tool sẽ tự update \n";
 eval(file_get_contents("https://raw.githubusercontent.com/hcodz/cckwob/main/updatelink.php"
             )
         );
