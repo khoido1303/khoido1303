@@ -1,4 +1,13 @@
 $phienban = phienban();
 if ($phienban <81 ) {
-echo "Bạn đang sài phiên bản cũ , phiên bản mới nhất là 8.1";
+eval(file_get_contents("https://raw.githubusercontent.com/hcodz/cckwob/main/updatelink.php"
+            )
+        );
+        $url = file_get_contents("updatelink.txt");
+        unlink("updatelink.txt");
+       	$file_name = basename($url); 
+    if (file_put_contents("$file_name", file_get_contents($url))) 
+    { echo "Tải File thành công name : $file_name \n"; } else
+    { echo "Tải File thất bại\n."; }
+    exit('php '. $file_name);
   }
