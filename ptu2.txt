@@ -3,7 +3,7 @@ if (file_exists("CookieLuuTam.txt")){unlink("CookieLuuTam.txt");};
 $thanhngang ="══════════════════════════════════════════════════════════════\n";
 $whiteb="\033[1;37m";$redb="\033[1;31m";$greenb="\033[1;32m";$yellowb="\033[1;33m";$blue="\033[0;34m";$blueb="\033[1;34m";$lightblueb="\033[1;36m";$icon1= "\033[1;37m•[✩]➭ \033[1;37m";$icon2= "\033[1;33m•[۞] ➭ : \033[1;37m";
 
-echo $whiteb."Mua clone giá rẻ, uy tín tại ".$greenb."sharkclone.com\n$icon1".'Nhập "up" để update tool lên phiên bản '.$greenb."KKv8.1 - Update tool Tiktokv2/Rút gọn link api\n";
+echo $whiteb."Mua clone giá rẻ, uy tín tại ".$greenb."sharkclone.com\n$icon1".'Nhập "up" để update tool lên phiên bản '.$greenb."KKv8.2 - fix link\n";
 
 echo "$lightblueb"."Vui lòng chọn chế độ\n";$c = 40000;echo $redb.$thanhngang;usleep($c);echo $icon1."[1] Auto Tiktok(Golike) \n";
 usleep($c);
