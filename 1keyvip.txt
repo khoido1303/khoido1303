@@ -6,7 +6,7 @@ $today1 = date("Ymd");
 //
 if ( $keyvipcheck == "keyfri5day"){
 
-       $ngayhethan = '20231114';
+       $ngayhethan = '20231112';
 
 if ( $ngayhethan >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
