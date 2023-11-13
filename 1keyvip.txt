@@ -32,7 +32,7 @@ if ( $ngayhethan >= $today1 )
  }
  //
  else
-if ( $keyvipcheck == "Nhtcloud"){
+if ( $keyvipcheck == "nhtcloud"){
        
        $ngayhethan = '20231213';
        
