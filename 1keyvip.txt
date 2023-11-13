@@ -41,6 +41,15 @@ if ( $keyvipcheck == "hieunk"){
  }
 //
 else
+if ( $keyvipcheck == "trinhdinhvinh"){
+       
+       $ngayhethan = '20231120';
+
+        if ($ngayhethan >= $today1 )
+        {$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+//
+else
 if ( $keyvipcheck == "mjsuon95"){
 $ngayhethan = '20231124';
 
