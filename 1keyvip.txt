@@ -4,9 +4,9 @@ function checkkey ($keyvipcheck) {
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $today1 = date("Ymd");
 //
-if ( $keyvipcheck == "keyfri5day"){
+if ( $keyvipcheck == "key3day"){
 
-       $ngayhethan = '20231112';
+       $ngayhethan = '20231117';
 
 if ( $ngayhethan >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
