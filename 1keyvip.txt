@@ -39,6 +39,7 @@ if ( $ngayhethan >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  //
+else 
  if ( $keyvipcheck == "todaynangcuc"){
        
        $ngayhethan = '20240116';
@@ -51,6 +52,25 @@ if ( $ngayhethan >= $today1 )
  if ( $keyvipcheck == "thanhtai2202"){
        
        $ngayhethan = '20231213';
+       
+        if ($ngayhethan >= $today1 )
+        {$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ else
+
+ if ( $keyvipcheck == "todaynangcuc"){
+       
+       $ngayhethan = '20240116';
+       
+        if ($ngayhethan >= $today1 )
+        {$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ else
+ if ( $keyvipcheck == "dungdeptrai"){
+       
+       $ngayhethan = '20231219';
        
         if ($ngayhethan >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
