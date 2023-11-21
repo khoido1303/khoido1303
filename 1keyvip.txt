@@ -227,7 +227,7 @@ if ( $ngayhethan >= $today1 )
 else
 if ( $keyvipcheck == "nguyencuong" ) 
 {
-       $trangthai = 1 ;
+       $trangthai = 0 ;
        $ngayhethan = 'Vĩnh viễn';
 }
 //
