@@ -31,7 +31,15 @@ if ( $ngayhethan >= $today1 )
  }
  //
  else
+if ( $keyvipcheck == "qdat06"){
 
+       $ngayhethan = '20231201';
+
+if ( $ngayhethan >= $today1 )
+{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ //
+ else
 if ( $keyvipcheck == "TruongVip"){
 
        $ngayhethan = '20231220';
