@@ -193,7 +193,7 @@ if ( $keyvipcheck == "keynammoi"){
 else
  if ( $keyvipcheck == "Duyen09042003"){
        
-       $ngayhethan = "20231122";
+       $ngayhethan = "20231222";
 
         if ( $ngayhethan >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
