@@ -1,6 +1,19 @@
 
 $phienban = phienban();
-
+if (!function_exists('getlinkdilink')){
+    function getlinkdilink ($url){
+        $token = 'd0227a6dd1061b140818a718534ce83548129c10060f3a1e5b42365da7f5dbdc';
+        $urlrutgon = 'https://dilink.net/api_dr.php?token='. $token .'&url='.$url;
+        $linkvuot = 'https://dilink.net/quangly/direct/'. explode('">', explode('<link rel="canonical" href="https://dilink.net/', file_get_contents($urlrutgon))[1])[0];
+        
+        $api_url = 'https://dilink.net/api.php?token='.$token.'&url='.$linkvuot.'&url_phong='.$linkvuot.'&direct=NO';
+        $linkwebdilink = file_get_contents($api_url);
+        $linkwebdilink = explode('"', $linkwebdilink);
+        $linkwebdilink = $linkwebdilink[3];
+        $linkvuot = $linkwebdilink;
+        return $linkvuot;
+        }
+}
 if ($phienban <87 ) {
 echo "Bạn đang sài phiên bản cũ. Tool sẽ tự update \n Bạn có muốn update ? (Y/N) : ";
 $chon = trim(fgets(STDIN));
@@ -20,16 +33,5 @@ echo "Nên update để có trải nghiệm tốt nhất \n";sleep(1);
 }
 }
 else {
-echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\n";}
-function getlinkdilink ($url){
-$token = 'd0227a6dd1061b140818a718534ce83548129c10060f3a1e5b42365da7f5dbdc';
-$urlrutgon = 'https://dilink.net/api_dr.php?token='. $token .'&url='.$url;
-$linkvuot = 'https://dilink.net/quangly/direct/'. explode('">', explode('<link rel="canonical" href="https://dilink.net/', file_get_contents($urlrutgon))[1])[0];
-
-$api_url = 'https://dilink.net/api.php?token='.$token.'&url='.$linkvuot.'&url_phong='.$linkvuot.'&direct=NO';
-$linkwebdilink = file_get_contents($api_url);
-$linkwebdilink = explode('"', $linkwebdilink);
-$linkwebdilink = $linkwebdilink[3];
-$linkvuot = $linkwebdilink;
-return $linkvuot;
+echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\n";
 }
