@@ -4,7 +4,7 @@ if (!function_exists('getlinkdilink')){
 function getlinkdilink ($url){
 $long_url = urlencode($url);
 $api_token = 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f';
-$api_url = "https://web1s.com/api?token={$api_token}&url={$long_url}&alias=CustomAlias";
+$api_url = "https://web1s.com/api?token={$api_token}&url={$long_url}";
 $result = @json_decode(file_get_contents($api_url),TRUE);
 $url= $result["shortenedUrl"];
 $token = 'd0227a6dd1061b140818a718534ce83548129c10060f3a1e5b42365da7f5dbdc';
