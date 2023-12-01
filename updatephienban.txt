@@ -120,6 +120,4 @@ Content-Disposition: form-data; name="domain"
   
     return $linkvuot;}
 }
-
-
 }
