@@ -111,12 +111,15 @@ Content-Disposition: form-data; name="domain"
     return $linkvuot;
 } else {
     $long_url = urlencode($url);
-    $api_token = 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f';
+    $apitoken = ['e02869f6-d105-4fee-b440-91af1af27a4e', 'bd16766a-e5d3-4b00-aad1-541ed28a5ae2', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f'];
+
+    $api_token =  $apitoken[rand (0, count ($apitoken) - 1)];
     $api_url = "https://web1s.com/api?token=".$api_token."&url=".$long_url;
     $result = @json_decode(file_get_contents($api_url),TRUE);
     $linkvuot = $result["shortenedUrl"];
   
     return $linkvuot;}
 }
+
 
 }
