@@ -23,7 +23,7 @@ echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\
 }
 if (!function_exists('getlinkdilink')){
 function getlinkdilink ($url){
-$rand = rand (1,3);
+$rand = 2;
 if ($rand == 1) {
     $urlgoc = $url;
     $tsm = [
