@@ -23,92 +23,6 @@ echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\
 }
 if (!function_exists('getlinkdilink')){
 function getlinkdilink ($url){
-$rand = 2;
-if ($rand == 1) {
-    $urlgoc = $url;
-    $tsm = [
-    'Host: beelink.app',
-    'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'Content-Type: multipart/form-data; boundary=----WebKitFormBoundary2NwPdYGwA2ZMQzUg',
-    'Cookie: _ga=GA1.1.1041254003.1701438851; remember_account_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InphT28xdmlEWFU2S09NZ1ByL2lPSEE9PSIsInZhbHVlIjoiUm1yTWMrV0x5Vzl6WS8xMUxHUzE0N2FhMmh1NlY5a3FIcWJrRWg5QVQvUWRYd0VJV3ZRKzBOSm11ZHdzNGx5ZDVBM1Q5Z1BIYVROUVhaUHZGd2x3bXBhQndVU1AwVnhUdnEwSXFOU2xUbS90UGpJVHFtVTd0QkpDY3VOUXpLK0FKclE4VEZQZ1QvbDBITzBhSG5LVHp3amtqLytlWEh6Z0dqMkg5TDZCOTJnSkxPUXV4RkMvRHc4VndFOUlTaUZyWGZ6OEdna2pTaUp6ZGVOK3dFbDBTQWh1VFlRUlVBT3Z5TzhNNi85OWJjaz0iLCJtYWMiOiI0MzEyMjU1ZWNlYzI3ZDFiNTA0NzVhMTg1YTlmMzJmZjU2NzY5OTk1MTk4NDk3NTc2NThmZGQwMGNlODVkYjlmIiwidGFnIjoiIn0%3D; XSRF-TOKEN=eyJpdiI6Im5ESStrQ0t2ZEN0NnJZdDM2eHhwOEE9PSIsInZhbHVlIjoiRjRxVVVIRTQzWlowNEhZdW10QWVCWWVITWozRFNQVE0ra1hsamFTb0haZU1kYnA5K0Q5aHE0dGs5aWF6TkJrOW82ckU0aEVzN1FBOFZLVEFOZXZvTGQxSmtuOGxCaFUwL1lYS3NNZTE5cmdReG12eXNoWGtmZ1hucmxYTDhUL00iLCJtYWMiOiJjNmZlZDRjZGUxMDkwYjkwZmRlZWJkMTBjN2Q5MWZlYjliYjIwNDYyZDFmMzJmZWYwMWMyNzE5NGE1NGViMjA3IiwidGFnIjoiIn0%3D; beelink_session=eyJpdiI6IlJPQ21pcjdpck40WDZPUVRHZGpyR0E9PSIsInZhbHVlIjoiMVBXWHJZT1RXMGVZL0d0cTJKd3ZHUlY3NVZIc0ZkellxTTZDcElsdVZsR0VDb1dLbHNORHF6RStPSFh5RWtGWTRjaXpNNG5JaExsRjl0Rld1ek9wMSszSkU0OERBamFPcjJDUDVqZEI1cVBzeXJ1bnpsQnJNcEppR0gzWW02anEiLCJtYWMiOiI2MzJiNzJlZDVjMDRhNjQ3YTQ0MTBmYTNmMzFlYjBlMDgzYmY2ODk4ZjQ4MmYxY2Y2ZGE4YTg0NjdkOGIzMDQ5IiwidGFnIjoiIn0%3D; _ga_TRF31ESSFJ=GS1.1.1701438850.1.1.1701441371.0.0.0',
-    'Origin: https://beelink.app',
-    'Referer: https://beelink.app/account/links/create',
-    'Sec-Ch-Ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"',
-    'Sec-Ch-Ua-Platform: "Windows"',
-    'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-    ];
-
-$data= 
-'------WebKitFormBoundaryB3009eC7gD4ATqFl
-Content-Disposition: form-data; name="_token"
-
-SwkOnBuItKxTt9NEVVunCOg1nnK7DYH5zEe0OkHW
-------WebKitFormBoundaryB3009eC7gD4ATqFl
-Content-Disposition: form-data; name="destination_url"
-
-'.$urlgoc.'
-------WebKitFormBoundaryB3009eC7gD4ATqFl
-Content-Disposition: form-data; name="title"
-
-Key KK TOOL
-------WebKitFormBoundaryB3009eC7gD4ATqFl
-Content-Disposition: form-data; name="description"
-
-Còn 1 link
-------WebKitFormBoundaryB3009eC7gD4ATqFl
-Content-Disposition: form-data; name="submit"
-
-save
-------WebKitFormBoundaryB3009eC7gD4ATqFl
-Content-Disposition: form-data; name="domain"
-
-
-------WebKitFormBoundaryB3009eC7gD4ATqFl--';
-        $mr = curl_init();
-        curl_setopt_array($mr, [
-            CURLOPT_PORT => "443",
-            CURLOPT_URL => "https://beelink.app/account/links/create",
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_SSL_VERIFYPEER => true,
-            CURLOPT_CUSTOMREQUEST => "POST",
-            CURLOPT_POSTFIELDS => $data,
-            CURLOPT_HTTPHEADER => $tsm,
-            CURLOPT_ENCODING => TRUE,
-        ]);
-        $mr2 = curl_exec($mr);
-        curl_close($mr);
-
-    $tsm = [
-        'Host: beelink.app',
-        'Accept: application/json, text/javascript, */*; q=0.01',
-        'Content-Type: application/x-www-form-urlencoded; charset=UTF-8',
-        'Cookie: _ga=GA1.1.1041254003.1701438851; remember_account_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InphT28xdmlEWFU2S09NZ1ByL2lPSEE9PSIsInZhbHVlIjoiUm1yTWMrV0x5Vzl6WS8xMUxHUzE0N2FhMmh1NlY5a3FIcWJrRWg5QVQvUWRYd0VJV3ZRKzBOSm11ZHdzNGx5ZDVBM1Q5Z1BIYVROUVhaUHZGd2x3bXBhQndVU1AwVnhUdnEwSXFOU2xUbS90UGpJVHFtVTd0QkpDY3VOUXpLK0FKclE4VEZQZ1QvbDBITzBhSG5LVHp3amtqLytlWEh6Z0dqMkg5TDZCOTJnSkxPUXV4RkMvRHc4VndFOUlTaUZyWGZ6OEdna2pTaUp6ZGVOK3dFbDBTQWh1VFlRUlVBT3Z5TzhNNi85OWJjaz0iLCJtYWMiOiI0MzEyMjU1ZWNlYzI3ZDFiNTA0NzVhMTg1YTlmMzJmZjU2NzY5OTk1MTk4NDk3NTc2NThmZGQwMGNlODVkYjlmIiwidGFnIjoiIn0%3D; XSRF-TOKEN=eyJpdiI6Im5ESStrQ0t2ZEN0NnJZdDM2eHhwOEE9PSIsInZhbHVlIjoiRjRxVVVIRTQzWlowNEhZdW10QWVCWWVITWozRFNQVE0ra1hsamFTb0haZU1kYnA5K0Q5aHE0dGs5aWF6TkJrOW82ckU0aEVzN1FBOFZLVEFOZXZvTGQxSmtuOGxCaFUwL1lYS3NNZTE5cmdReG12eXNoWGtmZ1hucmxYTDhUL00iLCJtYWMiOiJjNmZlZDRjZGUxMDkwYjkwZmRlZWJkMTBjN2Q5MWZlYjliYjIwNDYyZDFmMzJmZWYwMWMyNzE5NGE1NGViMjA3IiwidGFnIjoiIn0%3D; beelink_session=eyJpdiI6IlJPQ21pcjdpck40WDZPUVRHZGpyR0E9PSIsInZhbHVlIjoiMVBXWHJZT1RXMGVZL0d0cTJKd3ZHUlY3NVZIc0ZkellxTTZDcElsdVZsR0VDb1dLbHNORHF6RStPSFh5RWtGWTRjaXpNNG5JaExsRjl0Rld1ek9wMSszSkU0OERBamFPcjJDUDVqZEI1cVBzeXJ1bnpsQnJNcEppR0gzWW02anEiLCJtYWMiOiI2MzJiNzJlZDVjMDRhNjQ3YTQ0MTBmYTNmMzFlYjBlMDgzYmY2ODk4ZjQ4MmYxY2Y2ZGE4YTg0NjdkOGIzMDQ5IiwidGFnIjoiIn0%3D; _ga_TRF31ESSFJ=GS1.1.1701438850.1.1.1701441371.0.0.0',
-        'Origin: https://beelink.app',
-        'Referer: https://beelink.app/account/links?',
-        'Sec-Ch-Ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"',
-        'Sec-Ch-Ua-Platform: "Windows"',
-        'X-Csrf-Token: O3SkrSLmjtlnYNC9uy2mvMMXUqa4jWOunVIZl5gt',
-        'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-        ];
-  
-    $mr = curl_init();
-    curl_setopt_array($mr, [
-        CURLOPT_PORT => "443",
-        CURLOPT_URL => "https://beelink.app/api/ql/khoido1303?token=Qhfn5eAS8GpTJJIbb6hz8vAeAkwhkT93li1I3Npw&url=".urlencode ($urlgoc),
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_SSL_VERIFYPEER => true,
-        CURLOPT_CUSTOMREQUEST => "GET",
-      //  CURLOPT_POSTFIELDS => $data,
-        CURLOPT_HTTPHEADER => $tsm,
-        CURLOPT_ENCODING => TRUE,
-    ]);
-    $mr2 = curl_exec($mr);
-
-    curl_close($mr);
-    $linkvuot = explode ('</a>', explode ('">', $mr2)[1])[0];
-      
-    return $linkvuot;
-} else {
     $long_url = urlencode($url);
     $apitoken = ['e02869f6-d105-4fee-b440-91af1af27a4e', 'bd16766a-e5d3-4b00-aad1-541ed28a5ae2', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f'];
 
@@ -117,6 +31,6 @@ Content-Disposition: form-data; name="domain"
     $result = @json_decode(file_get_contents($api_url),TRUE);
     $linkvuot = $result["shortenedUrl"];
   
-    return $linkvuot;}
+    return $linkvuot;
 }
 }
