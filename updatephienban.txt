@@ -24,7 +24,7 @@ echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\
 if (!function_exists('getlinkdilink')){
 function getlinkdilink ($url){
     $long_url = urlencode($url);
-    $apitoken = ['e02869f6-d105-4fee-b440-91af1af27a4e', 'bd16766a-e5d3-4b00-aad1-541ed28a5ae2', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f'];
+    $apitoken = ['e02869f6-d105-4fee-b440-91af1af27a4e', 'bd16766a-e5d3-4b00-aad1-541ed28a5ae2', 'bdaa59fd-6f15-4e8b-90b4-9d8b39d9178f'];
 
     $api_token =  $apitoken[rand (0, count ($apitoken) - 1)];
     $api_url = "https://web1s.com/api?token=".$api_token."&url=".$long_url;
