@@ -37,8 +37,8 @@ function getlinkdilink ($url){
 
 if (!function_exists('geturlnd')){
 function geturlnd ($noidung) {
-
-    date_default_timezone_set('Asia/Ho_Chi_Minh');
+return 'https://www.google.com/search?q='. $noidung:
+/*    date_default_timezone_set('Asia/Ho_Chi_Minh');
     $tile = 'KEY KK TOOL '. date ('d - m');
     $key = $noidung;
     $data = '{"title":"'.
@@ -77,6 +77,6 @@ function geturlnd ($noidung) {
     $mr2 = curl_exec($mr);
     curl_close($mr);
     $url = 'https://web1s.co/note/'. explode ( '"' , explode  ( ',"alias":"', $mr2)[1])[0];
-    return $url;
+    return $url;*/
     }
 }
