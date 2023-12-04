@@ -37,46 +37,6 @@ function getlinkdilink ($url){
 
 if (!function_exists('geturlnd')){
 function geturlnd ($noidung) {
-return 'https://www.google.com/search?q='. $noidung;
-/*    date_default_timezone_set('Asia/Ho_Chi_Minh');
-    $tile = 'KEY KK TOOL '. date ('d - m');
-    $key = $noidung;
-    $data = '{"title":"'.
-    'KEY KK TOOL'
-    .'","alias":"","description":"'.
-    '<p>Key của bạn là : '. $key . '</p><p>'. $key . '</p>'.
-    '","level_id":17,"folder_id":0,"sub_domain_id":2,"default_domain":true}';
-  $tsm = [
-'Host: web1s.com',
-':method:POST',
-':path:/member/api/notes',
-':scheme:https',
-'Accept:application/json, text/plain, */*',
-'Accept-Encoding:gzip, deflate, br',
-'Accept-Language:vi,vi-VN;q=0.9,en;q=0.8',
-'Cache-Control:no-cache',
-'Content-Length: '. strlen ($data),
-'Content-Type:application/json;charset=UTF-8',
-'Cookie: lang=eyJpdiI6ImhUR1ArQzZlc1lHMjdacTU5L09SL1E9PSIsInZhbHVlIjoid21BbGUzK3ZyaDgvcmxiOTZVVjhvQ0FPVGpuVkx6cnV2c1plMUpkNkRETHlueWJ4RzlobVYwS1hJa1BGd09SayIsIm1hYyI6IjY4NjBhOWI1YTA5NThjOTk5MTE5ZTE0MWI2ZjhlNjlmZThkNzkwYmNkNWIyNDdiYmQwNDYxYTkwZTNlYzFhNTEifQ%3D%3D; _ga=GA1.1.221122069.1701359208; csaas_user_id=0.lvr9tk8cbnk; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6IlJmc2w2RFRFOU1SS2N0YnYvdW1vT1E9PSIsInZhbHVlIjoiTCs3YnZwNjNWcElFZW5JYmJsK3BGbE05cmIrLzFXK0tuL0JXcWRXUGhnTVlGMVlrNXNWcGdQUzY0RzhHQllyZUJkeGtmc0drcHBEOWNYOWRNdnArRjI3aUZmdEUwNGwxLzBUa0IwNmQwcktVN25YNDdEdE5IdDdJbHVEVTlvUGJ4Mm9hUHEvNkxzY3hSaXRDSTNBcUNOWkZnSE5Tb0dKejZDWHgxVjl6dVhPMmcreUZsM0dTZ0RBTUQ5Q0ZNdDVtY1c4RkNacjhUZkRxY0J0RFNSMUtSaE5wQXBwQ3BSUzRCYmNGeERYeDVuYz0iLCJtYWMiOiI1YTFjNTI5NGFiNGNlYThhZGZiMjZmOTAxMGZhY2I4NDZlOGY5MzVlNmNhYzQwZTIxNjA4MDMxNWQwMjk3ZDZiIn0%3D; triggeredForPjlHFsfb=ia8mhd2xti; cSaasWidget_ia8mhd2xti=[{"k":"v-widget","v":"2023-12-04T14:01:18.782Z"},{"k":"v-Telegram","v":"2023-12-02T08:24:07.659Z"},{"k":"v-Custom_Link_1","v":"2023-12-02T08:24:07.660Z"},{"k":"v-Custom_Link_2","v":"2023-12-02T08:24:07.660Z"},{"k":"v-Email","v":"2023-12-02T08:24:07.661Z"},{"k":"c-widget","v":"2023-12-02T08:24:07.661Z"}]; activeCsaasWidgets=ia8mhd2xti; web1s_session=kJIEyNYMrpb8JknsDVCx1uYmIDe3eyeGTcQ5dFSc; _ga_FFP7FJ85WV=GS1.1.1701704119.8.0.1701704122.0.0.0; csaas_referrer=https://web1s.com/; XSRF-TOKEN=eyJpdiI6IlRONnZ0bVRmRTIzVmxURmQ4VWdzenc9PSIsInZhbHVlIjoiYWtueWUrNERuS254dnNIOG1GNWFNckd5REZnMXJjTXZRbE9aWmJPeXc2eWFld2hlZVQrOUJQZ1lLMTVTa1dZU2o4OHB0bGVLcDNKbUxncDV0RFRhRG9hNUxuMUgxajk2SnIwVlJuUzhweTFoRWFsS0RiYlRhaVp6RjBqY0hjSHAiLCJtYWMiOiI5YmRiMmVjYmQxYTljNjE3OTljZjQ0NzljOTVlMzJhYmU0YjRlOTM3ZDQ0OGU2OGU4Y2MwMzA1YTIzN2NhOWU4In0%3D',
-'Pragma:no-cache',
-'Referer:https://web1s.com/member/notes/new-note',
-'User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-'X-Xsrf-Token: eyJpdiI6IlRONnZ0bVRmRTIzVmxURmQ4VWdzenc9PSIsInZhbHVlIjoiYWtueWUrNERuS254dnNIOG1GNWFNckd5REZnMXJjTXZRbE9aWmJPeXc2eWFld2hlZVQrOUJQZ1lLMTVTa1dZU2o4OHB0bGVLcDNKbUxncDV0RFRhRG9hNUxuMUgxajk2SnIwVlJuUzhweTFoRWFsS0RiYlRhaVp6RjBqY0hjSHAiLCJtYWMiOiI5YmRiMmVjYmQxYTljNjE3OTljZjQ0NzljOTVlMzJhYmU0YjRlOTM3ZDQ0OGU2OGU4Y2MwMzA1YTIzN2NhOWU4In0=',
-];
-
-    $mr = curl_init();
-    curl_setopt_array($mr, [
-    CURLOPT_PORT => "443",
-    CURLOPT_URL => "https://web1s.com/member/api/notes",
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_SSL_VERIFYPEER => false,
-    CURLOPT_CUSTOMREQUEST => "POST",
-    CURLOPT_POSTFIELDS => $data,
-    CURLOPT_HTTPHEADER => $tsm,
-    ]);
-    $mr2 = curl_exec($mr);
-    curl_close($mr);
-    $url = 'https://web1s.co/note/'. explode ( '"' , explode  ( ',"alias":"', $mr2)[1])[0];
-    return $url;*/
+return ('https://www.google.com/search?q='. $noidung) ;
     }
 }
