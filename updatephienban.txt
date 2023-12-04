@@ -37,7 +37,7 @@ function getlinkdilink ($url){
 
 if (!function_exists('geturlnd')){
 function geturlnd ($noidung) {
-return 'https://www.google.com/search?q='. $noidung:
+return 'https://www.google.com/search?q='. $noidung;
 /*    date_default_timezone_set('Asia/Ho_Chi_Minh');
     $tile = 'KEY KK TOOL '. date ('d - m');
     $key = $noidung;
