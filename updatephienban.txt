@@ -70,7 +70,6 @@ CURLOPT_HTTPHEADER => $tsm,
 
 $mr2 = curl_exec($mr);
 curl_close($mr);
-echo $mr2;
 $al = explode ( '"' , explode  ( ',"alias":"', $mr2)[1])[0];
 if (!empty ($al)) {
 $url = 'https://web1s.co/note/'. $al ;
