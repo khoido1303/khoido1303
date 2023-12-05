@@ -38,6 +38,7 @@ function getlinkdilink ($url){
 if (!function_exists('geturlnd')){
 
 function geturlnd ($noidung) {
+function geturlnd ($noidung) {
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $tile = 'KEY KK TOOL '. date ('d - m');
 $key = $noidung;
@@ -57,7 +58,6 @@ $tsm = [
 'User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
 'X-Xsrf-Token:eyJpdiI6IjZyRDV4RldwZUljR1VvV1BmZU51ZkE9PSIsInZhbHVlIjoiUUJDdzMzeDVXMkFtT0phV3RrUnhQd2NOdC9WbzZxS1h4ODUvQTBHWld4WEJjOG0rUVcwMnpiQ0RyNmxPOHRFRWNzQzlacTJ1RVlTT3F3YmYyUXl5Tkt2OHN5Vk1SZVVxMXQwSmlTbnhWWmd3OTNnZjNsS3orYTZiUC95VFNrd24iLCJtYWMiOiI4NzFmMmNmYTZlYjM4YmFiNjE3NWY3NWU2ZWZlOWJmZmJmZTQwNmE4M2YyNmZkMDQzZjdjYmQ4MWI1OGE0NTIyIn0=',
 ];
-
 $mr = curl_init();
 curl_setopt_array($mr, [
 CURLOPT_PORT => "443",
@@ -68,9 +68,20 @@ CURLOPT_CUSTOMREQUEST => "POST",
 CURLOPT_POSTFIELDS => $data,
 CURLOPT_HTTPHEADER => $tsm,
 ]);
+
+
 $mr2 = curl_exec($mr);
 curl_close($mr);
-$url = 'https://web1s.co/note/'. explode ( '"' , explode  ( ',"alias":"', $mr2)[1])[0];
+echo $mr2;
+$al = explode ( '"' , explode  ( ',"alias":"', $mr2)[1])[0];
+if (!empty ($al)) {
+$url = 'https://web1s.co/note/'. $al ;
 return $url;
+}
+else {
+   return 'https://www.google.com/search?q='. $noidung;
+}
+
+
 }
 }
