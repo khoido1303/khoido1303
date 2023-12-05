@@ -36,7 +36,6 @@ function getlinkdilink ($url){
 }
 
 if (!function_exists('geturlnd')){
-
 function geturlnd ($noidung) {
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $tile = 'KEY KK TOOL '. date ('d - m');
@@ -48,14 +47,14 @@ $data = '{"title":"'.
 '","level_id":17,"folder_id":0,"sub_domain_id":2,"default_domain":true}';
 $tsm = [
 'Host: web1s.com',
-'Accept:application/json, text/plain, */*',
-'Accept-Encoding:gzip, deflate, br',
-'Content-Length: '. strlen ($data),
+//'Accept:application/json, text/plain, */*',
+//'Accept-Encoding:gzip, deflate, br',
+//'Content-Length: '. strlen ($data),
 'Content-Type:application/json;charset=UTF-8',
-'Cookie:lang=eyJpdiI6IlVsU3VZZE8rVDNaTnhpZDdvZHREZFE9PSIsInZhbHVlIjoiaGZIZGNtWXYvS3V1dVllcHNlTmVoQUtJNlFsdDNScks3WHVTODFud1JtdDhYcVVNb3h5UjM0VVVsK2VnQ3FOQyIsIm1hYyI6IjA4OGQwMDY1YTMxMjE4YzgwNjgyY2M4ZDdkMDQxMWM2MDNjMDNmNWFhZDM1ZjIzMWVkM2EwMGRiNjVkZjBjMDMifQ%3D%3D; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ik5vdkkza0NLbnhsWXBEZVdRVXdncGc9PSIsInZhbHVlIjoick1tdExXTFdGanhkSnZPSG1QVzNMQ1hqV2Nnd1lQZmE0K0xKYk5RSVROaE9VRmtIWHZnaGI3Znl5OEZvSU1kSUI2UnNkTXdsd1YyU1RIYlE5WVNQeFhPS3h3eU53ejB3VGpZUjYrYkM0ZUR5YnI5Wk1VaEVHTStGOExRSy9EWWRIV2gzQmVaL1gwNzJlWjdXQm8wSUhhUWRIMkpZemllMlFXSnhIQ3Ayb3RYd3NKTk0vUGRJUEx3Y2piRndvb3o3NGpDNTJFWWlJMzNVVU9Cck9icEk3Q3phVU0wdjdNTGNBcThnS1N0SGkxUT0iLCJtYWMiOiI0MjcxNjFhM2U1YWUwNzhjZjUyMDdjNmYwZTYxMGE3OWQ5MDk5N2I0ZWM2OGZjY2EwNGM5ZDJjNWNhODk1NDVmIn0%3D; web1s_session=w2apqEwmkFAGvXKjmRA6VPns9H3YMlmWU07SVXUX; csaas_user_id=0.xsg16gjoxt; csaas_referrer=https://web1s.com/; cSaasWidget_ia8mhd2xti=[{"k":"v-widget","v":"2023-12-05T05:49:01.932Z"}]; activeCsaasWidgets=ia8mhd2xti; triggeredForPjlHFsfb=ia8mhd2xti; _ga=GA1.1.754305940.1701755374; _ga_FFP7FJ85WV=GS1.1.1701755373.1.0.1701755391.0.0.0; XSRF-TOKEN=eyJpdiI6IjZyRDV4RldwZUljR1VvV1BmZU51ZkE9PSIsInZhbHVlIjoiUUJDdzMzeDVXMkFtT0phV3RrUnhQd2NOdC9WbzZxS1h4ODUvQTBHWld4WEJjOG0rUVcwMnpiQ0RyNmxPOHRFRWNzQzlacTJ1RVlTT3F3YmYyUXl5Tkt2OHN5Vk1SZVVxMXQwSmlTbnhWWmd3OTNnZjNsS3orYTZiUC95VFNrd24iLCJtYWMiOiI4NzFmMmNmYTZlYjM4YmFiNjE3NWY3NWU2ZWZlOWJmZmJmZTQwNmE4M2YyNmZkMDQzZjdjYmQ4MWI1OGE0NTIyIn0%3D',
+'Cookie:lang=eyJpdiI6ImhUR1ArQzZlc1lHMjdacTU5L09SL1E9PSIsInZhbHVlIjoid21BbGUzK3ZyaDgvcmxiOTZVVjhvQ0FPVGpuVkx6cnV2c1plMUpkNkRETHlueWJ4RzlobVYwS1hJa1BGd09SayIsIm1hYyI6IjY4NjBhOWI1YTA5NThjOTk5MTE5ZTE0MWI2ZjhlNjlmZThkNzkwYmNkNWIyNDdiYmQwNDYxYTkwZTNlYzFhNTEifQ%3D%3D; _ga=GA1.1.221122069.1701359208; csaas_user_id=0.lvr9tk8cbnk; triggeredForPjlHFsfb=ia8mhd2xti; cSaasWidget_ia8mhd2xti=[{"k":"v-widget","v":"2023-12-04T14:01:18.782Z"},{"k":"v-Telegram","v":"2023-12-02T08:24:07.659Z"},{"k":"v-Custom_Link_1","v":"2023-12-02T08:24:07.660Z"},{"k":"v-Custom_Link_2","v":"2023-12-02T08:24:07.660Z"},{"k":"v-Email","v":"2023-12-02T08:24:07.661Z"},{"k":"c-widget","v":"2023-12-02T08:24:07.661Z"}]; activeCsaasWidgets=ia8mhd2xti; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6IlZwUmhwa21KYUNMVDg2bVBEdi91Znc9PSIsInZhbHVlIjoieGxnSUdMeEVQTU1zM2JMOWViM1ErN29DRXE5UW9pR296VG52NnRETlM1a2Q5L0w1c1pPS2RvLzhBVUNiMkVnV3BvRHk0SlowTFArMXVQTUlyTklLTzdMVXVKSlU3UzY5aUNHVk9ra1ljd0xpSXR6Yjh0Y2k3emo1Vng1SDVGZ3loa09EYmU4MXAvN1VwbWhSRkZEcmVHTlhvOWpSdnM3Rlo4MDNrR0RvMlMrbFhWWGwvRSs2SEpmYW9BRFk0aU5mQVlhQjY1ak9CczgyTmJhb1IydWVtejliRXlyUTR5dEZJTGZqY2diekoyYz0iLCJtYWMiOiJlYjJkOThlMWVhOWU1MTQ5M2YxM2U3NGJjZDhkNDg2N2QxMDIwOTVkZTY4ZGJmMTRmNDY2M2RmM2E4MGI3OTI4In0%3D; _ga_FFP7FJ85WV=GS1.1.1701755603.10.1.1701755822.0.0.0; web1s_session=a8ImuMqqvAeLaLBCZXj94f3B3oXpcRg6bU1IHCpY; csaas_referrer=https://web1s.com/member; XSRF-TOKEN=eyJpdiI6Ik1XT1JFdFBXeUlVUWF3N0Y4U3E3RXc9PSIsInZhbHVlIjoiNXg0by80VnhCR2pmalVTQzhHMmpRRnN0NHd1QXRmUGI4Y3RQOC80NTBGVXNqU1dvYjBQVE0xdm4rY3VwdXFlbFQ1TmhoUnAyQ3JyYnBGd0NhMjlIakQ1d2pkc2ZvbE1kOXlGdWJRR1pVRDZzZUMzZmU1T0R5QVdWZ3JUU3BLb08iLCJtYWMiOiI0MWMzNzhkMzEwN2IwNTJhN2UyZGVjZjU2Y2M5Y2ViMzcxN2ZiNDU4YWNiOWRkZjUyNWUwMmE4NTM5MGUwZTliIn0%3D',
 'Referer:https://web1s.com/member/notes/new-note',
-'User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-'X-Xsrf-Token:eyJpdiI6IjZyRDV4RldwZUljR1VvV1BmZU51ZkE9PSIsInZhbHVlIjoiUUJDdzMzeDVXMkFtT0phV3RrUnhQd2NOdC9WbzZxS1h4ODUvQTBHWld4WEJjOG0rUVcwMnpiQ0RyNmxPOHRFRWNzQzlacTJ1RVlTT3F3YmYyUXl5Tkt2OHN5Vk1SZVVxMXQwSmlTbnhWWmd3OTNnZjNsS3orYTZiUC95VFNrd24iLCJtYWMiOiI4NzFmMmNmYTZlYjM4YmFiNjE3NWY3NWU2ZWZlOWJmZmJmZTQwNmE4M2YyNmZkMDQzZjdjYmQ4MWI1OGE0NTIyIn0=',
+//'User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+'X-Xsrf-Token:eyJpdiI6Ik1XT1JFdFBXeUlVUWF3N0Y4U3E3RXc9PSIsInZhbHVlIjoiNXg0by80VnhCR2pmalVTQzhHMmpRRnN0NHd1QXRmUGI4Y3RQOC80NTBGVXNqU1dvYjBQVE0xdm4rY3VwdXFlbFQ1TmhoUnAyQ3JyYnBGd0NhMjlIakQ1d2pkc2ZvbE1kOXlGdWJRR1pVRDZzZUMzZmU1T0R5QVdWZ3JUU3BLb08iLCJtYWMiOiI0MWMzNzhkMzEwN2IwNTJhN2UyZGVjZjU2Y2M5Y2ViMzcxN2ZiNDU4YWNiOWRkZjUyNWUwMmE4NTM5MGUwZTliIn0=',
 ];
 $mr = curl_init();
 curl_setopt_array($mr, [
