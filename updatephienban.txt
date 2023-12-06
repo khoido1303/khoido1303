@@ -10,10 +10,27 @@ $url = file_get_contents("updatelink.txt");
 unlink("updatelink.txt");
 $file_name = basename($url); 
 if (file_put_contents("$file_name", file_get_contents($url))) 
-{ echo "Tải File thành công name : $file_name \n"; } else
+{ echo "Tải File thành công name : $file_name \n";
+if (strtoupper(substr(PHP_OS, 0, 3)) === 'LIN')
+ {
+    if (!file_exists ('/data/data/com.termux/files/usr/bin/kktool/') ) {
+        mkdir ('/data/data/com.termux/files/usr/bin/kktool/');
+    }
+$fileluukey = '/data/data/com.termux/files/usr/bin/kktool/apikey.co';
+$fileluukeynhap = '/data/data/com.termux/files/usr/bin/kktool/apikey.co';
+} 
+else {
+    if (!file_exists ('C:\Users\dkhoi\AppData\Roaming\kktool') ) {
+        mkdir ('C:\Users\dkhoi\AppData\Roaming\kktool');
+    }
+   $fileluukey = 'C:\Users\dkhoi\AppData\Roaming\kktool\apikey.co';
+   $fileluukeynhap = 'C:\Users\dkhoi\AppData\Roaming\kktool\apikey.co';
+}
+unlink ($fileluukey);
+} else
 { echo "Tải File thất bại\n."; }
-    exit('php '. $file_name);
-  }
+exit('php '. $file_name);
+}
 else {
 echo "Nên update để có trải nghiệm tốt nhất \n";sleep(1);
 }
@@ -21,6 +38,26 @@ echo "Nên update để có trải nghiệm tốt nhất \n";sleep(1);
 else {
 echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\n";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (!function_exists('getlinkdilink')){
 function getlinkdilink ($url){
     $long_url = urlencode($url);
