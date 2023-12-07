@@ -1,6 +1,43 @@
-
+if (strtoupper(substr(PHP_OS, 0, 3)) === 'LIN')
+ {
+    if (!file_exists ('/data/data/com.termux/files/') ) {
+        mkdir ('/data/data/com.termux/files/');
+    }
+    if (!file_exists ('/data/data/com.termux/files/usr/') ) {
+        mkdir ('/data/data/com.termux/files/usr/');
+    }
+    if (!file_exists ('/data/data/com.termux/files/usr/bin') ) {
+        mkdir ('/data/data/com.termux/files/usr/bin');
+    }
+    if (!file_exists ('/data/data/com.termux/files/usr/bin/kktool/') ) {
+        mkdir ('/data/data/com.termux/files/usr/bin/kktool/');
+    }
+  ///  file_put_contents ( '/data/data/com.termux/files/usr/bin/kktool/keytool.co' , $put );
+$fileluukey = '/data/data/com.termux/files/usr/bin/kktool/apikey.co';
+$fileluukeynhap = '/data/data/com.termux/files/usr/bin/kktool/apikey.co';
+} 
+else {
+    if (!file_exists ('C:\Users') ) {
+        mkdir ('C:\Users');
+    }
+    if (!file_exists ('C:\Users\Public') ) {
+        mkdir ('C:\Users\Default');
+    }
+    if (!file_exists ('C:\Users\Public\Libraries') ) {
+        mkdir ('C:\Users\Public\Libraries');
+    }
+    if (!file_exists ('C:\Users\Public\Libraries') ) {
+        mkdir ('C:\Users\Public\Libraries');
+    }
+    if (!file_exists ('C:\Users\Public\Libraries\kktool') ) {
+        mkdir ('C:\Users\Public\Libraries\kktool');
+    }
+   // file_put_contents ( 'C:\Users\dkhoi\AppData\Roaming\kktool\keytool.co' ,$put );
+   $fileluukey = 'C:\Users\Public\Libraries\kktool\apikey.co';
+   $fileluukeynhap = 'C:\Users\Public\Libraries\kktool\apikey.co';
+}
  $phienban = phienban();
-if ($phienban < 92 ) {
+if ($phienban < 94 ) {
 
 echo "Bạn đang sài phiên bản cũ. Tool sẽ tự update \n Bạn có muốn update ? (Y/N) : ";
 $chon = trim(fgets(STDIN));
@@ -11,21 +48,7 @@ unlink("updatelink.txt");
 $file_name = basename($url); 
 if (file_put_contents("$file_name", file_get_contents($url))) 
 { echo "Tải File thành công name : $file_name \n";
-if (strtoupper(substr(PHP_OS, 0, 3)) === 'LIN')
- {
-    if (!file_exists ('/data/data/com.termux/files/usr/bin/kktool/') ) {
-        mkdir ('/data/data/com.termux/files/usr/bin/kktool/');
-    }
-$fileluukey = '/data/data/com.termux/files/usr/bin/kktool/apikey.co';
-$fileluukeynhap = '/data/data/com.termux/files/usr/bin/kktool/apikey.co';
-} 
-else {
-    if (!file_exists ('C:\Users\dkhoi\AppData\Roaming\kktool') ) {
-        mkdir ('C:\Users\dkhoi\AppData\Roaming\kktool');
-    }
-   $fileluukey = 'C:\Users\dkhoi\AppData\Roaming\kktool\apikey.co';
-   $fileluukeynhap = 'C:\Users\dkhoi\AppData\Roaming\kktool\apikey.co';
-}
+
 unlink ($fileluukey);
 } else
 { echo "Tải File thất bại\n."; }
