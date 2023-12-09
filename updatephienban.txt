@@ -37,7 +37,7 @@ else {
    $fileluukeynhap = 'C:\Public\Libraries\kktool\apikey.co';
 }
  $phienban = phienban();
-if ($phienban < 96 ) {
+if ($phienban < 97 ) {
 
 echo "Bạn đang sài phiên bản cũ. Tool sẽ tự update \n Bạn có muốn update ? (Y/N) : ";
 $chon = trim(fgets(STDIN));
