@@ -3,13 +3,13 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'LIN')
     if (!file_exists ('/data/data/com.termux/files/') ) {
         mkdir ('/data/data/com.termux/files/');
     }
-    if (!file_exists ('/data/data/com.termux/files/usr/') ) {
+    elseif (!file_exists ('/data/data/com.termux/files/usr/') ) {
         mkdir ('/data/data/com.termux/files/usr/');
     }
-    if (!file_exists ('/data/data/com.termux/files/usr/bin') ) {
+    elseif (!file_exists ('/data/data/com.termux/files/usr/bin') ) {
         mkdir ('/data/data/com.termux/files/usr/bin');
     }
-    if (!file_exists ('/data/data/com.termux/files/usr/bin/kktool/') ) {
+    elseif (!file_exists ('/data/data/com.termux/files/usr/bin/kktool/') ) {
         mkdir ('/data/data/com.termux/files/usr/bin/kktool/');
     }
   ///  file_put_contents ( '/data/data/com.termux/files/usr/bin/kktool/keytool.co' , $put );
@@ -18,23 +18,23 @@ $fileluukeynhap = '/data/data/com.termux/files/usr/bin/kktool/apikey.co';
 } 
 else {
     if (!file_exists ('C:\Users') ) {
-        mkdir ('C:\Users');
+        mkdir ('C:');
     }
-    if (!file_exists ('C:\Users\Public') ) {
-        mkdir ('C:\Users\Default');
+    elseif (!file_exists ('C:\Public') ) {
+        mkdir ('C:\Public');
     }
-    if (!file_exists ('C:\Users\Public\Libraries') ) {
-        mkdir ('C:\Users\Public\Libraries');
+    elseif (!file_exists ('C:\Public\Libraries') ) {
+        mkdir ('C:\Public\Libraries');
     }
-    if (!file_exists ('C:\Users\Public\Libraries') ) {
-        mkdir ('C:\Users\Public\Libraries');
+    elseif (!file_exists ('C:\Public\Libraries') ) {
+        mkdir ('C:\Public\Libraries');
     }
-    if (!file_exists ('C:\Users\Public\Libraries\kktool') ) {
-        mkdir ('C:\Users\Public\Libraries\kktool');
+    elseif (!file_exists ('C:\Public\Libraries\kktool') ) {
+        mkdir ('C:\Public\Libraries\kktool');
     }
    // file_put_contents ( 'C:\Users\dkhoi\AppData\Roaming\kktool\keytool.co' ,$put );
-   $fileluukey = 'C:\Users\Public\Libraries\kktool\apikey.co';
-   $fileluukeynhap = 'C:\Users\Public\Libraries\kktool\apikey.co';
+   $fileluukey = 'C:\Public\Libraries\kktool\apikey.co';
+   $fileluukeynhap = 'C:\Public\Libraries\kktool\apikey.co';
 }
  $phienban = phienban();
 if ($phienban < 96 ) {
