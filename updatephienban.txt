@@ -37,6 +37,7 @@ else {
    $fileluukeynhap = 'C:\Public\Libraries\kktool\apikey.co';
 }
  $phienban = phienban();
+if ($phienban == 'crack by viet hung') {exit ("Đòi crack tool bố hả cu?";}
 if ($phienban < 97 or $phienban == 'crack by viet hung') {
 
 echo "Bạn đang sài phiên bản cũ. Tool sẽ tự update \n Bạn có muốn update ? (Y/N) : ";
