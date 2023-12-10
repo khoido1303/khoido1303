@@ -36,6 +36,7 @@ else {
    $fileluukey = 'C:\Public\Libraries\kktool\apikey.co';
    $fileluukeynhap = 'C:\Public\Libraries\kktool\apikey.co';
 }
+if(empty(file_get_contents($fileluukey))) {unlink($fileluukey);}
  $phienban = phienban();
 if ($phienban =='crack by viet hung') {exit ("Đòi crack tool bố hả cu?");}
 if ($phienban < 98 ) {
