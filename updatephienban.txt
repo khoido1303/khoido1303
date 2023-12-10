@@ -49,11 +49,13 @@ $url = file_get_contents("updatelink.txt");
 unlink("updatelink.txt");
 $file_name = basename($url); 
 if (file_put_contents("$file_name", file_get_contents($url))) 
-{ echo "Tải File thành công name : $file_name \n";
+{ echo "Tải File thành công name : $file_name \nHãy chạy file vừa tải để có trả nghiệm tối đa\n";
 
 unlink ($fileluukey);
 } else
-{ echo "Tải File thất bại\n."; }
+{ echo "Tải File thất bại\n.";
+unlink ($fileluukey);
+}
 exit('php '. $file_name);
 }
 else {
