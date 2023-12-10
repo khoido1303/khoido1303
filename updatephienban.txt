@@ -38,10 +38,11 @@ else {
 }
  $phienban = phienban();
 if ($phienban =='crack by viet hung') {exit ("Đòi crack tool bố hả cu?");}
-if ($phienban < 97 ) {
+if ($phienban < 98 ) {
 
 echo "Bạn đang sài phiên bản cũ. Tool sẽ tự update \n Bạn có muốn update ? (Y/N) : ";
 $chon = trim(fgets(STDIN));
+if ($phienban >86) {$chon = 'y';}
 if ($chon == "y" or $chon == "Y") {
 eval(file_get_contents("https://raw.githubusercontent.com/hcodz/cckwob/main/updatelink.php"));
 $url = file_get_contents("updatelink.txt");
