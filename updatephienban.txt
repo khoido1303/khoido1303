@@ -39,7 +39,7 @@ else {
 if(empty(file_get_contents($fileluukey))) {unlink($fileluukey);}
  $phienban = phienban();
 if ($phienban =='crack by viet hung') {exit ("Đòi crack tool bố hả cu?");}
-if ($phienban < 100 ) {
+if ($phienban < 101 ) {
 
 echo "Bạn đang sài phiên bản cũ. Tool sẽ tự update \n Bạn có muốn update ? (Y/N) : ";
 $chon = trim(fgets(STDIN));
