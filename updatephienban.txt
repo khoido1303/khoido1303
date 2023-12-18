@@ -85,6 +85,11 @@ echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\
 
 
 
+if (!function_exists ('phienbanmoi')) {
+    function phienbanmoi () {
+        return '102';
+    }
+    }
 
 if (!function_exists('getlinkdilink')){
 function getlinkdilink ($url){
