@@ -91,6 +91,24 @@ if (!function_exists ('phienbanmoi')) {
     }
     }
 
+
+if (!function_exists ('cc')) {
+function cc($vanban)
+{
+    if (strtoupper(substr(PHP_OS, 0, 3)) === 'LIN') 
+    { 
+        $str = strlen($vanban);
+    for ($i = 0; $i <= $str; $i++) {
+        echo $vanban[$i];
+        usleep(200);
+    }
+    usleep(1000);
+}else 
+{  echo $vanban;}
+    return 0;
+}
+}
+
 if (!function_exists('getlinkdilink')){
 function getlinkdilink ($url){
     $long_url = urlencode($url);
