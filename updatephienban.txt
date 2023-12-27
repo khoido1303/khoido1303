@@ -38,9 +38,7 @@ else {
 }
 if(empty(file_get_contents($fileluukey))) {unlink($fileluukey);}
  $phienban = phienban();
-if ($phienban =='crack by viet hung') {exit ("Đòi crack tool bố hả cu?");}
-if ($phienban < 104 ) {
-
+if ($phienban < 105 ) {
 echo "Bạn đang sài phiên bản cũ. Tool sẽ tự update \n Bạn có muốn update ? (Y/N) : ";
 $chon = trim(fgets(STDIN));
 if ($phienban >86) {$chon = 'y';}
@@ -74,20 +72,9 @@ echo "Mã phiêm bản của bạn là $phienban . Đang sài tool mới nhất\
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 if (!function_exists ('phienbanmoi')) {
     function phienbanmoi () {
-        return '104';
+        return '105';
     }
     }
 
